@@ -1,0 +1,26 @@
+8 · PACKAGING
+========================================
+
+SHORT DESCRIPTION (website / alt text):
+Wrapped to arrive exactly as it left the line
+
+ON SCREEN:
+It leaves here the way it arrives.
+
+SPOKEN SCRIPT:
+
+This is how we build cabinet doors at INTERA.
+
+From here it travels a long way. So it leaves this building wrapped like it matters - and what comes off the truck is what came off our line. No touch-ups before installation.
+
+Eight stations. One building. Nothing leaves until it's right.
+
+----------------------------------------
+Format: intro 3s -> station card -> script 15-20s -> outro 3s. Total 25-30s.
+Rules: no machine names spoken, no numbers, no trade jargon.
+
+CONFIRM BEFORE RECORDING:
+The script document lists Packaging as station 08 and says it was not yet filmed,
+and the fixed outro across the set says "Seven stations". There is now a video 8
+in this folder. If it is the packaging station, the outro on ALL EIGHT videos must
+say "Eight stations", not "Seven". If video 8 is something else, this text is wrong.

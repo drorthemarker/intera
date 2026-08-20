@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KONE Headquarters Case Study | High-traffic architectural cabinetry and custom fronts by INTERA for global elevator mobility leader.">
+    <title>KONE Case Study | INTERA Projects</title>
+    <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- LOCKED HEADER -->
+    <header>
+        <div class="header-brand">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;" aria-label="INTERA Home">
+                <img src="logo and favicon/logo.svg" alt="INTERA Logo" class="brand-logo-img">
+                <span class="logo">INTERA</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flat-page.html">Products</a></li>
+                <li><a href="catalog-page.html">Catalog</a></li>
+                <li><a href="application-page.html">Application</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="story-page.html">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 50vh MACRO HERO HEADER -->
+        <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('projects/kone/main.jpg') center/cover no-repeat; color: #fff;">
+            <div class="container">
+                <span class="hero-tag" style="color: #fff; border-color: #fff;">Enterprise Fitout</span>
+                <h1 style="color: #fff;">KONE GLOBAL HEADQUARTERS</h1>
+                <p class="lead" style="color: #eee; max-width: 780px;">
+                    KONE — One of the world's largest elevator and escalator companies, moving more than a billion people every day. Architectural cabinetry engineered for maximum resilience in heavily utilized corporate spaces.
+                </p>
+                <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="projects.html" class="btn-outline" style="border-color: #fff; color: #fff;">&larr; Back to Portfolio</a>
+                    <a href="contact-page.html" class="btn-primary" style="background: #fff; color: #111 !important; border-color: #fff;">Inquire for Commercial Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT PHOTO GALLERY -->
+        <section style="background: var(--bg-white);">
+            <div class="container">
+                <h2 class="section-title">KONE ARCHITECTURAL GALLERY</h2>
+                <p class="section-subtitle">Click any image to enlarge in full-screen lightbox view.</p>
+
+                <div class="grid-3">
+                    <div class="card" onclick="openImageModal('projects/kone/main.jpg', 'KONE · Main Cafeteria', 'Warm architectural woodgrain fronts integrated with industrial elements.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/kone/main.jpg" alt="KONE Main View">
+                        </div>
+                        <h3>COMMUNAL DINING FITOUT</h3>
+                        <p>Synchronized Woodgrain Facades</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/kone/_DSC2219.jpg', 'KONE · Detail 2219', 'Integrated handle and cleanline millwork.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/kone/_DSC2219.jpg" alt="KONE Detail 2219">
+                        </div>
+                        <h3>SERVICE KITCHENETTE</h3>
+                        <p>Flush Surface Alignments</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/kone/_DSC2224.jpg', 'KONE · Detail 2224', 'Perimeter edge sealing resistant to daily commercial sanitization.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/kone/_DSC2224.jpg" alt="KONE Detail 2224">
+                        </div>
+                        <h3>ISLAND PREPARATION RUN</h3>
+                        <p>Waterproof Joint Bonding</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/kone/_DSC2228.jpg', 'KONE · Detail 2228', 'Upper storage units pre-drilled with CNC accuracy.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/kone/_DSC2228.jpg" alt="KONE Detail 2228">
+                        </div>
+                        <h3>UPPER CABINET RUN</h3>
+                        <p>Zero Field Drilling Required</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/kone/_DSC2231.jpg', 'KONE · Detail 2231', 'Rich woodgrain texture under ambient architectural lighting.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/kone/_DSC2231.jpg" alt="KONE Detail 2231">
+                        </div>
+                        <h3>TEXTURAL CONTINUITY</h3>
+                        <p>Thermally Fused Laminate Surface</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/kone/_DSC2235.jpg', 'KONE · Detail 2235', 'Storage wall context within open-plan cafeteria.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/kone/_DSC2235.jpg" alt="KONE Detail 2235">
+                        </div>
+                        <h3>SPATIAL PERSPECTIVE</h3>
+                        <p>High Impact Durability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="event-banner">IWF Atlanta 2026 · Booth C613 · August 25–28</div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Universal Lightbox / Modal -->
+    <div id="universalModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-media" id="modalMediaContainer"></div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top & Cookie Banner -->
+    <a href="#top" id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top" style="opacity: 0; pointer-events: none;">&#8593;</a>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div>
+            <strong>We value your privacy.</strong> 
+            <p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

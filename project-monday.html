@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="monday.com Corporate Architecture Case Study | Custom INTERA cabinet doors engineered for high-traffic technology headquarters.">
+    <title>monday.com Case Study | INTERA Projects</title>
+    <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- LOCKED HEADER -->
+    <header>
+        <div class="header-brand">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;" aria-label="INTERA Home">
+                <img src="logo and favicon/logo.svg" alt="INTERA Logo" class="brand-logo-img">
+                <span class="logo">INTERA</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flat-page.html">Products</a></li>
+                <li><a href="catalog-page.html">Catalog</a></li>
+                <li><a href="application-page.html">Application</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="story-page.html">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 50vh MACRO HERO HEADER -->
+        <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('projects/monday/MAIN.jpg') center/cover no-repeat; color: #fff;">
+            <div class="container">
+                <span class="hero-tag" style="color: #fff; border-color: #fff;">Enterprise Case Study</span>
+                <h1 style="color: #fff;">MONDAY.COM HEADQUARTERS</h1>
+                <p class="lead" style="color: #eee; max-width: 780px;">
+                    monday.com — a work management platform used by more than 250,000 teams worldwide, listed on NASDAQ. High-volume custom architectural cabinetry engineered for heavy daily employee use.
+                </p>
+                <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="projects.html" class="btn-outline" style="border-color: #fff; color: #fff;">&larr; Back to Portfolio</a>
+                    <a href="contact-page.html" class="btn-primary" style="background: #fff; color: #111 !important; border-color: #fff;">Inquire for Commercial Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT PHOTO GALLERY -->
+        <section style="background: var(--bg-white);">
+            <div class="container">
+                <h2 class="section-title">PROJECT GALLERY</h2>
+                <p class="section-subtitle">Click any image to enlarge in full-screen lightbox view.</p>
+
+                <div class="grid-3">
+                    <div class="card" onclick="openImageModal('projects/monday/MAIN.jpg', 'monday.com · Main Kitchen Run', 'Seamless architectural slab fronts with matched zero-joint ABS edgebanding.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/monday/MAIN.jpg" alt="monday.com Main Kitchen Installation">
+                        </div>
+                        <h3>MAIN CAFETERIA INSTALLATION</h3>
+                        <p>High-Traffic Corporate Breakout Area</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/monday/IMG_0182.jpg', 'monday.com · Detail Angle', 'Precision aligned drawer faces and upper cabinet runs.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/monday/IMG_0182.jpg" alt="monday.com Detail Installation">
+                        </div>
+                        <h3>DRAWER & PANTRY FACADE</h3>
+                        <p>Consistent Reveal Tolerances</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/monday/IMG_0190.jpg', 'monday.com · Storage Wall', 'Integrated storage cabinetry maintaining continuous grain register.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/monday/IMG_0190.jpg" alt="monday.com Storage Wall">
+                        </div>
+                        <h3>WALL-HEIGHT RUN</h3>
+                        <p>Moisture-Resistant Engineered MR Core</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/monday/IMG_0352.jpg', 'monday.com · Island Fitout', 'Cabinet island fronts with integrated ergonomics.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/monday/IMG_0352.jpg" alt="monday.com Island Cabinetry">
+                        </div>
+                        <h3>COMMUNAL ISLAND</h3>
+                        <p>Impact-Resistant Edge Sealing</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/monday/IMG_0382.jpg', 'monday.com · Beverage Station', 'Wet bar kitchen fronts with water-resistant core.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/monday/IMG_0382.jpg" alt="monday.com Beverage Station">
+                        </div>
+                        <h3>BEVERAGE BAR FACADE</h3>
+                        <p>Zero Moisture Ingress at Joints</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('projects/monday/IMG_0390.jpg', 'monday.com · Architectural View', 'Long-distance architectural sightline showing flush surfaces.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="projects/monday/IMG_0390.jpg" alt="monday.com Architectural Sightline">
+                        </div>
+                        <h3>ARCHITECTURAL SIGHTLINE</h3>
+                        <p>Flawless Flush Planarity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="event-banner">IWF Atlanta 2026 · Booth C613 · August 25–28</div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Universal Lightbox / Modal -->
+    <div id="universalModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-media" id="modalMediaContainer"></div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top & Cookie Banner -->
+    <a href="#top" id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top" style="opacity: 0; pointer-events: none;">&#8593;</a>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div>
+            <strong>We value your privacy.</strong> 
+            <p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

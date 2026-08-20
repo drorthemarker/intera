@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INTERA Architectural Metals & Specials | Real black iron, locked rusted iron patina, and brushed stainless steel 316 cabinet fronts on a moisture-resistant core.">
+    <title>Specials & Metals | INTERA Architectural Fronts</title>
+    <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- LOCKED HEADER -->
+    <header>
+        <div class="header-brand">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;" aria-label="INTERA Home">
+                <img src="logo and favicon/logo.svg" alt="INTERA Logo" class="brand-logo-img">
+                <span class="logo">INTERA</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="specials-page.html" class="active">Products</a></li>
+                <li><a href="catalog-page.html">Catalog</a></li>
+                <li><a href="application-page.html">Application</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="story-page.html">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 50vh MACRO HERO HEADER -->
+        <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('product/metals_main.png') center/cover no-repeat; color: #fff;">
+            <div class="container">
+                <span class="hero-tag" style="color: #fff; border-color: #fff;">Product Profile · 04</span>
+                <h1 style="color: #fff;">ARCHITECTURAL REAL METALS</h1>
+                <p class="lead" style="color: #eee; max-width: 780px;">
+                    Real metal on a moisture-resistant core. Black iron for a matte, graphite depth. Rusted iron, where the natural patina is developed and chemically locked. Brushed stainless steel 316 for ultimate durability. Nothing here is printed.
+                </p>
+                <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="#metals-collection" class="btn-primary" style="background: #fff; color: #111 !important; border-color: #fff;">View Metal Finishes</a>
+                    <a href="catalog-metals.html" class="btn-outline" style="border-color: #fff; color: #fff;">Metals Catalog</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUB-NAVIGATION BAR (Products) -->
+        <div style="background: #f4f4f4; border-bottom: 1px solid var(--border-light); padding: 15px 0;">
+            <div class="container" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <a href="flat-page.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">Flat Fronts</a>
+                <a href="shaker-page.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">Shaker (3/8", 3/4", 2")</a>
+                <a href="handles-page.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">Integrated Handles</a>
+                <a href="specials-page.html" style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dark); border-bottom: 2px solid var(--text-dark); padding-bottom: 4px;">Specials & Metals</a>
+            </div>
+        </div>
+
+        <!-- COLLECTION GRID -->
+        <section id="metals-collection" style="background: var(--bg-white);">
+            <div class="container">
+                <h2 class="section-title">REAL METAL COLLECTION</h2>
+                <p class="section-subtitle">Authentic tactile metal surfaces engineered for luxury architectural hospitality, retail, and residential projects.</p>
+
+                <div class="grid-3">
+                    <div class="card" onclick="openImageModal('product/METAL/Rusted Iron (2).png', 'Rusted Iron Patina Front', 'Authentic oxidized iron surface sealed with non-porous clear coat.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="product/METAL/Rusted Iron (2).png" alt="Rusted Iron Patina Front">
+                        </div>
+                        <h3>RUSTED IRON (A)</h3>
+                        <p>Chemical Patina · Sealed Oxide Tone</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('product/METAL/Rusted Iron (3).png', 'Rusted Iron Texture Detail', 'Rich architectural depth with nuanced iron oxide color variations.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="product/METAL/Rusted Iron (3).png" alt="Rusted Iron Texture Variation">
+                        </div>
+                        <h3>RUSTED IRON (B)</h3>
+                        <p>Deep Mottled Oxide Finish</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('product/METAL/Rusted Iron (4).png', 'Rusted Iron Macro Texture', 'Tactile genuine metallic surface on stable MR substrate.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="product/METAL/Rusted Iron (4).png" alt="Rusted Iron Close Up">
+                        </div>
+                        <h3>RUSTED IRON (C)</h3>
+                        <p>Tactile Organic Surface</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('product/METAL/IRON FLAT.jpg', 'Black Iron Slab Front', 'Raw pickled black iron with subtle graphite reflections.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="product/METAL/IRON FLAT.jpg" alt="Black Iron Flat Front">
+                        </div>
+                        <h3>BLACK IRON SLAB</h3>
+                        <p>Raw Pickled Steel · Matte Depth</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('product/METAL/stainless steel.jpg', 'Brushed Stainless Steel 316', 'Architectural marine-grade stainless steel with directional grain.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="product/METAL/stainless steel.jpg" alt="Brushed Stainless Steel 316 Front">
+                        </div>
+                        <h3>STAINLESS STEEL 316</h3>
+                        <p>Brushed Directional Grain · Acid Resistant</p>
+                    </div>
+
+                    <div class="card" onclick="openImageModal('product/metals_main.png', 'Metals Production Showcase', 'Full perspective view of architectural metal cabinetry installations.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container">
+                            <img src="product/metals_main.png" alt="Metal Fronts Installation Overview">
+                        </div>
+                        <h3>METAL ENSEMBLE</h3>
+                        <p>Custom Commercial & Luxury Fitouts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MATERIAL ADVANTAGES -->
+        <section style="background: var(--bg-gray); border-top: 1px solid var(--border-light);">
+            <div class="container">
+                <h2 class="section-title">ENGINEERING TRUE METAL FRONTS</h2>
+                <p class="section-subtitle">Real metal doors typically suffer from excess weight and distortion. INTERA eliminates both.</p>
+
+                <div class="grid-3" style="text-align: left;">
+                    <div style="background: #fff; padding: 35px; border: 1px solid var(--border-light); border-radius: 4px;">
+                        <h3 style="font-size: 18px; margin: 0 0 12px 0; text-transform: uppercase;">1. Lightweight Core</h3>
+                        <p style="font-size: 14px; color: var(--text-gray); margin: 0; line-height: 1.7;">
+                            By bonding genuine metal faces to an engineered moisture-resistant core, we maintain standard hinge weight limits while providing authentic metal tactile feel.
+                        </p>
+                    </div>
+
+                    <div style="background: #fff; padding: 35px; border: 1px solid var(--border-light); border-radius: 4px;">
+                        <h3 style="font-size: 18px; margin: 0 0 12px 0; text-transform: uppercase;">2. Chemically Locked Patina</h3>
+                        <p style="font-size: 14px; color: var(--text-gray); margin: 0; line-height: 1.7;">
+                            Our rusted iron surfaces are accelerated in-house to the ideal aesthetic state, then permanently sealed so the oxidation never transfers to fingers or clothes.
+                        </p>
+                    </div>
+
+                    <div style="background: #fff; padding: 35px; border: 1px solid var(--border-light); border-radius: 4px;">
+                        <h3 style="font-size: 18px; margin: 0 0 12px 0; text-transform: uppercase;">3. Marine-Grade 316 Stainless</h3>
+                        <p style="font-size: 14px; color: var(--text-gray); margin: 0; line-height: 1.7;">
+                            Specified with true 316 austenitic stainless steel for maximum resistance against kitchen acids, fingerprints, and coastal environmental conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 60px;">
+                    <a href="contact-page.html" class="btn-primary">Specify Metals for Your Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="event-banner">IWF Atlanta 2026 · Booth C613 · August 25–28</div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Universal Lightbox / Modal -->
+    <div id="universalModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-media" id="modalMediaContainer"></div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top & Cookie Banner -->
+    <a href="#top" id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top" style="opacity: 0; pointer-events: none;">&#8593;</a>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div>
+            <strong>We value your privacy.</strong> 
+            <p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

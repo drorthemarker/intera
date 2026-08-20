@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inside the INTERA Factory Floor | An 8-station precision manufacturing journey. Cut, joined, pressed, calibrated, and sealed shut.">
+    <title>The Space Where It Happens | Our Factory Story | INTERA</title>
+    <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .station-card {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .station-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+        .station-poster {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            background: #111;
+            cursor: pointer;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .station-poster video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.88;
+            transition: transform 0.4s ease, opacity 0.3s ease;
+            display: block;
+            pointer-events: none;
+        }
+        .station-poster:hover video {
+            transform: scale(1.05);
+            opacity: 0.7;
+        }
+        .station-number-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(0,0,0,0.75);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 5px 12px;
+            border-radius: 2px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255,255,255,0.2);
+            z-index: 2;
+        }
+        .station-body {
+            padding: 30px;
+            text-align: left;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .station-body h3 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+        .station-body p.on-screen {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            border-left: 2px solid var(--text-dark);
+            padding-left: 10px;
+        }
+        .station-body p.desc {
+            font-size: 15px;
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin: 0 0 20px 0;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- LOCKED HEADER -->
+    <header>
+        <div class="header-brand">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;" aria-label="INTERA Home">
+                <img src="logo and favicon/logo.svg" alt="INTERA Logo" class="brand-logo-img">
+                <span class="logo">INTERA</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flat-page.html">Products</a></li>
+                <li><a href="catalog-page.html">Catalog</a></li>
+                <li><a href="application-page.html">Application</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="story-page.html" class="active">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 50vh MACRO HERO HEADER -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="hero-tag">Eight Stations · One Building</span>
+                <h1>THE SPACE WHERE IT HAPPENS</h1>
+                <p class="lead">
+                    Behind every INTERA cabinet door is a meticulously calibrated production environment. Cut, joined, pressed, calibrated, and edged. Nothing leaves until it's right.
+                </p>
+                <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="#stations" class="btn-primary">Watch The 8 Stations</a>
+                    <a href="about-page.html" class="btn-outline">Meet The Team</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMISE BAR -->
+        <div class="promise-bar">
+            <span>Moisture-Resistant Core</span>
+            <span>Zero Dark Lines</span>
+            <span>Uncompromising Edge Sealing</span>
+        </div>
+
+        <!-- 8 STATIONS VIDEO GRID (Native First Frame Previews) -->
+        <section id="stations" style="background: var(--bg-white);">
+            <div class="container">
+                <h2 class="section-title">THE 8-STATION PROCESS</h2>
+                <p class="section-subtitle">Click any station to watch video footage of the automated production floor in action.</p>
+
+                <div class="grid-2" style="gap: 40px;">
+                    <!-- Station 1 -->
+                    <div class="station-card">
+                        <div class="station-poster" onclick="openVideoModal('our story/1.mov', 'Station 01 · CNC Nesting', 'Everything starts with a full sheet. The machine reads the order and takes every part out of it — cut, labelled, ready. Nobody here picks up a tape measure.')">
+                            <span class="station-number-tag">Station 01</span>
+                            <video preload="metadata" playsinline muted>
+                                <source src="our story/1.mov#t=0.001" type="video/mp4">
+                                <source src="our story/1.mov#t=0.001" type="video/quicktime">
+                            </video>
+                            <div class="play-button-overlay" aria-hidden="true">&#9658;</div>
+                        </div>
+                        <div class="station-body">
+                            <div>
+                                <p class="on-screen">Nothing is measured twice.</p>
+                                <h3>CNC NESTING</h3>
+                                <p class="desc">Full sheet in, every part out, cut and labelled. The machine reads digital specifications directly from our application.</p>
+                            </div>
+                            <button class="btn-outline" style="width: 100%;" onclick="openVideoModal('our story/1.mov', 'Station 01 · CNC Nesting', 'Full sheet in, every part out, cut and labelled. Nothing is measured twice.')">Watch Station 01 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Station 2 -->
+                    <div class="station-card">
+                        <div class="station-poster" onclick="openVideoModal('our story/2.mov', 'Station 02 · Double Miter Saw', 'A Shaker door is only as good as its corners. Both corners are cut at the same moment, on the same setting. So when the frame comes together, it closes tight.')">
+                            <span class="station-number-tag">Station 02</span>
+                            <video preload="metadata" playsinline muted>
+                                <source src="our story/2.mov#t=0.001" type="video/mp4">
+                                <source src="our story/2.mov#t=0.001" type="video/quicktime">
+                            </video>
+                            <div class="play-button-overlay" aria-hidden="true">&#9658;</div>
+                        </div>
+                        <div class="station-body">
+                            <div>
+                                <p class="on-screen">Both corners. One pass.</p>
+                                <h3>DOUBLE MITER SAW</h3>
+                                <p class="desc">Both 45° corner joints cut simultaneously on unified tooling. Ensures absolute gap-free miter closures.</p>
+                            </div>
+                            <button class="btn-outline" style="width: 100%;" onclick="openVideoModal('our story/2.mov', 'Station 02 · Double Miter Saw', 'Both corners cut at once for tight joints. Bonded tight with no gaps.')">Watch Station 02 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Station 3 -->
+                    <div class="station-card">
+                        <div class="station-poster" onclick="openVideoModal('our story/3.mov', 'Station 03 · Press', 'This is where a frame becomes a door. Even pressure, all the way across, every single time.')">
+                            <span class="station-number-tag">Station 03</span>
+                            <video preload="metadata" playsinline muted>
+                                <source src="our story/3.mov#t=0.001" type="video/mp4">
+                                <source src="our story/3.mov#t=0.001" type="video/quicktime">
+                            </video>
+                            <div class="play-button-overlay" aria-hidden="true">&#9658;</div>
+                        </div>
+                        <div class="station-body">
+                            <div>
+                                <p class="on-screen">Bonded, not assembled.</p>
+                                <h3>THE PRESS</h3>
+                                <p class="desc">Even hydraulic pressure turns individual rails, stiles, and center panel into an inseparable single unit.</p>
+                            </div>
+                            <button class="btn-outline" style="width: 100%;" onclick="openVideoModal('our story/3.mov', 'Station 03 · Press', 'Even pressure turns a frame into a door. Permanent bond.')">Watch Station 03 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Station 4 -->
+                    <div class="station-card">
+                        <div class="station-poster" onclick="openVideoModal('our story/4.mov', 'Station 04 · Calibrating Sander', 'Every door passes through here, so the whole kitchen comes out the same. Stand in front of a finished run of cabinets and your eye will never find a door that is off.')">
+                            <span class="station-number-tag">Station 04</span>
+                            <video preload="metadata" playsinline muted>
+                                <source src="our story/4.mov#t=0.001" type="video/mp4">
+                                <source src="our story/4.mov#t=0.001" type="video/quicktime">
+                            </video>
+                            <div class="play-button-overlay" aria-hidden="true">&#9658;</div>
+                        </div>
+                        <div class="station-body">
+                            <div>
+                                <p class="on-screen">One kitchen. One thickness.</p>
+                                <h3>CALIBRATING SANDER</h3>
+                                <p class="desc">Calibrates every door across an entire project to identical sub-millimeter thickness with zero outliers.</p>
+                            </div>
+                            <button class="btn-outline" style="width: 100%;" onclick="openVideoModal('our story/4.mov', 'Station 04 · Calibrating Sander', 'Calibrated to identical thickness with zero outliers across the full order.')">Watch Station 04 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Station 5 -->
+                    <div class="station-card">
+                        <div class="station-poster" onclick="openVideoModal('our story/5.mov', 'Station 05 · Main Edgebander', 'The edge is the first thing a hand touches, and the first thing to give up. Ours is sealed shut all the way around.')">
+                            <span class="station-number-tag">Station 05</span>
+                            <video preload="metadata" playsinline muted>
+                                <source src="our story/5.mov#t=0.001" type="video/mp4">
+                                <source src="our story/5.mov#t=0.001" type="video/quicktime">
+                            </video>
+                            <div class="play-button-overlay" aria-hidden="true">&#9658;</div>
+                        </div>
+                        <div class="station-body">
+                            <div>
+                                <p class="on-screen">A sealed edge, not a strip.</p>
+                                <h3>MAIN EDGEBANDER</h3>
+                                <p class="desc">Waterproof zero-joint polyurethane bonding creating a monolithic perimeter impenetrable to steam.</p>
+                            </div>
+                            <button class="btn-outline" style="width: 100%;" onclick="openVideoModal('our story/5.mov', 'Station 05 · Main Edgebander', 'The edge sealed shut, one continuous surface.')">Watch Station 05 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Station 6 -->
+                    <div class="station-card">
+                        <div class="station-poster" onclick="openVideoModal('our story/6.mov', 'Station 06 · The Modified Edgebander', 'This one you won\'t find anywhere else. We took a machine and rebuilt it ourselves, for one job only: the slim Shaker frame.')">
+                            <span class="station-number-tag">Station 06</span>
+                            <video preload="metadata" playsinline muted>
+                                <source src="our story/6.mov#t=0.001" type="video/mp4">
+                                <source src="our story/6.mov#t=0.001" type="video/quicktime">
+                            </video>
+                            <div class="play-button-overlay" aria-hidden="true">&#9658;</div>
+                        </div>
+                        <div class="station-body">
+                            <div>
+                                <p class="on-screen">Built for the slim Shaker.</p>
+                                <h3>THE CUSTOM EDGEBANDER</h3>
+                                <p class="desc">Rebuilt in-house specifically to apply seamless edgebanding to ultra-narrow 3/8" Delgado shaker rails.</p>
+                            </div>
+                            <button class="btn-outline" style="width: 100%;" onclick="openVideoModal('our story/6.mov', 'Station 06 · The Modified Edgebander', 'Custom rebuilt machinery for the ultra-narrow Delgado 3/8 in. frame.')">Watch Station 06 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Station 7 -->
+                    <div class="station-card">
+                        <div class="station-poster" onclick="openVideoModal('our story/7.mov', 'Station 07 · Second CNC', 'Some doors need work on the back as well as the front. Turning a door over and keeping reference is where accuracy usually disappears. Not here.')">
+                            <span class="station-number-tag">Station 07</span>
+                            <video preload="metadata" playsinline muted>
+                                <source src="our story/7.mov#t=0.001" type="video/mp4">
+                                <source src="our story/7.mov#t=0.001" type="video/quicktime">
+                            </video>
+                            <div class="play-button-overlay" aria-hidden="true">&#9658;</div>
+                        </div>
+                        <div class="station-body">
+                            <div>
+                                <p class="on-screen">Flip the part. Keep the reference.</p>
+                                <h3>SECOND CNC (BACK BORING)</h3>
+                                <p class="desc">Secondary machining for hinge boring and drawer runner drillings while maintaining pristine front face condition.</p>
+                            </div>
+                            <button class="btn-outline" style="width: 100%;" onclick="openVideoModal('our story/7.mov', 'Station 07 · Second CNC', 'Precision rear boring for European hinges and hardware.')">Watch Station 07 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Station 8 -->
+                    <div class="station-card">
+                        <div class="station-poster" onclick="openVideoModal('our story/8.mov', 'Station 08 · Packaging', 'From here it travels a long way. So it leaves this building wrapped like it matters — and what comes off the truck is what came off our line.')">
+                            <span class="station-number-tag">Station 08</span>
+                            <video preload="metadata" playsinline muted>
+                                <source src="our story/8.mov#t=0.001" type="video/mp4">
+                                <source src="our story/8.mov#t=0.001" type="video/quicktime">
+                            </video>
+                            <div class="play-button-overlay" aria-hidden="true">&#9658;</div>
+                        </div>
+                        <div class="station-body">
+                            <div>
+                                <p class="on-screen">It leaves here the way it arrives.</p>
+                                <h3>SECURE PACKAGING & LOGISTICS</h3>
+                                <p class="desc">Rigid edge corner protectors and custom palletizing ensure zero touch-ups needed before installation.</p>
+                            </div>
+                            <button class="btn-outline" style="width: 100%;" onclick="openVideoModal('our story/8.mov', 'Station 08 · Packaging', 'Wrapped to arrive in pristine condition directly on the jobsite.')">Watch Station 08 &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section style="background: var(--bg-gray); border-top: 1px solid var(--border-light);">
+            <div class="container">
+                <h2 class="section-title">BUILT TO LAST</h2>
+                <p class="section-subtitle">Experience the difference that six generations of craft and custom CNC engineering deliver.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact-page.html" class="btn-primary">Schedule a Factory Consultation</a>
+                    <a href="catalog-page.html" class="btn-outline">Explore Materials</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="event-banner">IWF Atlanta 2026 · Booth C613 · August 25–28</div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Universal Lightbox / Modal (Video & Image) -->
+    <div id="universalModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-media" id="modalMediaContainer"></div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top & Cookie Banner -->
+    <a href="#top" id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top" style="opacity: 0; pointer-events: none;">&#8593;</a>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div>
+            <strong>We value your privacy.</strong> 
+            <p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

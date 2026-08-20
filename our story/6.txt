@@ -1,0 +1,21 @@
+6 · THE MODIFIED EDGEBANDER
+========================================
+
+SHORT DESCRIPTION (website / alt text):
+A machine we rebuilt for the slim Shaker frame
+
+ON SCREEN:
+Built for the slim Shaker.
+
+SPOKEN SCRIPT:
+
+This is how we build cabinet doors at INTERA.
+
+This one you won't find anywhere else. We took a machine and rebuilt it ourselves, for one job only: the slim Shaker frame. It's the hardest thing in this building to get right, and no machine comes from the factory ready for it. So we made one that is.
+
+Seven stations. One building. Nothing leaves until it's right.
+
+----------------------------------------
+Format: intro 3s -> station card -> script 15-20s -> outro 3s. Total 25-30s.
+Rules: no machine names spoken, no numbers, no trade jargon.
+IMPORTANT: never say this machine is a modified HOMAG.

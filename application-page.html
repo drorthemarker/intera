@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INTERA Ordering Application | Intelligent digital application for precision custom cabinet door ordering, millimeter dimensions, and CNC boring specifications.">
+    <title>Intelligent Application for Precision Ordering | INTERA</title>
+    <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .app-step-card {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+            margin-bottom: 60px;
+            transition: box-shadow 0.3s ease;
+        }
+        .app-step-card:hover {
+            box-shadow: 0 15px 50px rgba(0,0,0,0.07);
+        }
+        .app-step-inner {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+        }
+        .app-step-img-box {
+            flex: 1.2;
+            background: #fbfbfb;
+            border: 1px solid var(--border-light);
+            border-radius: 4px;
+            padding: 15px;
+            cursor: pointer;
+        }
+        .app-step-img-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .app-step-text-box {
+            flex: 1;
+            text-align: left;
+        }
+        @media (max-width: 900px) {
+            .app-step-inner {
+                flex-direction: column;
+                padding: 25px;
+            }
+            .app-step-inner.reverse {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- LOCKED HEADER -->
+    <header>
+        <div class="header-brand">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;" aria-label="INTERA Home">
+                <img src="logo and favicon/logo.svg" alt="INTERA Logo" class="brand-logo-img">
+                <span class="logo">INTERA</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flat-page.html">Products</a></li>
+                <li><a href="catalog-page.html">Catalog</a></li>
+                <li><a href="application-page.html" class="active">Application</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="story-page.html">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 50vh MACRO HERO HEADER -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="hero-tag">Proprietary Software Engine</span>
+                <h1>INTELLIGENT APPLICATION FOR PRECISION ORDERING</h1>
+                <p class="lead">
+                    We don’t make another cabinet door. We make yours. Through our proprietary digital platform, architects, millworkers, and contractors command the exact dimensions, materials, edgebanding, and hardware boring patterns required for zero-error manufacturing.
+                </p>
+                <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="#workflow" class="btn-primary">Explore Workflow</a>
+                    <a href="contact-page.html" class="btn-outline">Request Portal Access</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMISE STATS BAR -->
+        <div class="promise-bar">
+            <span>Direct CNC Link</span>
+            <span>Millimeter Accuracy</span>
+            <span>Zero Touch-Up Delivery</span>
+        </div>
+
+        <!-- 5-STEP VERTICAL WORKFLOW -->
+        <section id="workflow" style="background: var(--bg-white);">
+            <div class="container" style="max-width: 1200px;">
+                <h2 class="section-title">PRECISION ORDERING WORKFLOW</h2>
+                <p class="section-subtitle">How our digital interface bridges design specification directly with our 8-station factory floor.</p>
+
+                <!-- SECTION 1: Color Selection -->
+                <div class="app-step-card">
+                    <div class="app-step-inner">
+                        <div class="app-step-text-box">
+                            <h3 style="font-size: 24px; font-weight: 700; margin: 0 0 14px 0; text-transform: uppercase;">Color Selection by Advanced Parameters</h3>
+                            <p style="font-size: 15px; color: var(--text-gray); line-height: 1.8;">
+                                Filter through roughly 150 finishes by substrate (Synchronized Laminate, Acrylic, Veneer, Real Metal), tone, grain direction, and surface gloss. Direct visual validation ensures every front matches your rendering specifications.
+                            </p>
+                        </div>
+                        <div class="app-step-img-box" onclick="openImageModal('app/color picker.png', 'Color Selection by Advanced Parameters', 'Interactive digital swatch selector with multi-parameter filtering.')">
+                            <img src="app/color picker.png" alt="Color Selection by Advanced Parameters Interface Screenshot">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 2: Front Ordering Table -->
+                <div class="app-step-card">
+                    <div class="app-step-inner reverse">
+                        <div class="app-step-img-box" onclick="openImageModal('app/order table.png', 'Front Ordering to Exact Specifications', 'Matrix table for inputting height, width, quantity, grain direction, and edgeband code.')">
+                            <img src="app/order table.png" alt="Front Ordering to Exact Specifications Table Screenshot">
+                        </div>
+                        <div class="app-step-text-box">
+                            <h3 style="font-size: 24px; font-weight: 700; margin: 0 0 14px 0; text-transform: uppercase;">Front Ordering to Exact Specifications</h3>
+                            <p style="font-size: 15px; color: var(--text-gray); line-height: 1.8;">
+                                Input exact door, drawer front, and filler dimensions to the millimeter or fractional inch. The application calculates edge allowances, label codes, and optimal nesting patterns across full raw sheets automatically.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 3: Hinge Boring -->
+                <div class="app-step-card">
+                    <div class="app-step-inner">
+                        <div class="app-step-text-box">
+                            <h3 style="font-size: 24px; font-weight: 700; margin: 0 0 14px 0; text-transform: uppercase;">Precise Hinge Boring Selection</h3>
+                            <p style="font-size: 15px; color: var(--text-gray); line-height: 1.8;">
+                                Select standard European 35mm hinge cups, custom top/bottom cup distances, or 100% plug-and-play IKEA SEKTION drilling lines. Our CNC boring heads machine both sides without manual tape measuring.
+                            </p>
+                        </div>
+                        <div class="app-step-img-box" onclick="openImageModal('app/hinges.png', 'Precise Hinge Boring Selection', 'Visual hinge pattern configuration and cup spacing selector.')">
+                            <img src="app/hinges.png" alt="Precise Hinge Boring Selection Interface Screenshot">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 4: Drawer Drilling -->
+                <div class="app-step-card">
+                    <div class="app-step-inner reverse">
+                        <div class="app-step-img-box" onclick="openImageModal('app/drawers.png', 'Precise Drawer Drilling Selection', 'Pre-configured hole positions for Blum Legrabox, Tandembox, Grass, and custom runners.')">
+                            <img src="app/drawers.png" alt="Precise Drawer Drilling Selection Interface Screenshot">
+                        </div>
+                        <div class="app-step-text-box">
+                            <h3 style="font-size: 24px; font-weight: 700; margin: 0 0 14px 0; text-transform: uppercase;">Precise Drawer Drilling Selection</h3>
+                            <p style="font-size: 15px; color: var(--text-gray); line-height: 1.8;">
+                                Pre-programmed drilling coordinates for leading undermount and double-wall drawer systems (Blum Legrabox/Tandembox, Grass Vionaro, Hettich AvanTech, and IKEA MAXIMERA). Fast installation with zero field drilling.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 5: Lift Systems (Flaps) -->
+                <div class="app-step-card">
+                    <div class="app-step-inner">
+                        <div class="app-step-text-box">
+                            <h3 style="font-size: 24px; font-weight: 700; margin: 0 0 14px 0; text-transform: uppercase;">Precise Lift-System (Flap) Drilling Selection</h3>
+                            <p style="font-size: 15px; color: var(--text-gray); line-height: 1.8;">
+                                Specify overhead cabinet bi-fold and parallel lift hardware (Blum AVENTOS HF, HK-S, HL, HS). Calibrated bracket drillings ensure perfectly balanced vertical operation from the moment doors are hung.
+                            </p>
+                        </div>
+                        <div class="app-step-img-box" onclick="openImageModal('app/claps.png', 'Precise Lift-System (Flap) Drilling Selection', 'Configuration interface for overhead lift flap hardware mounting holes.')">
+                            <img src="app/claps.png" alt="Precise Lift-System Drilling Selection Interface Screenshot">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 50px; text-align: center;">
+                    <a href="contact-page.html" class="btn-primary">Register for Trade Portal Access</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="event-banner">IWF Atlanta 2026 · Booth C613 · August 25–28</div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Universal Lightbox / Modal -->
+    <div id="universalModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-media" id="modalMediaContainer"></div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top & Cookie Banner -->
+    <a href="#top" id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top" style="opacity: 0; pointer-events: none;">&#8593;</a>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div>
+            <strong>We value your privacy.</strong> 
+            <p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

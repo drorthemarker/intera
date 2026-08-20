@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INTERA Premium Laminate Catalog | Over 100 architectural decors across natural woods, solid colours, stones, concrete, and metals.">
+    <title>Premium Laminate Catalog | INTERA</title>
+    <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- LOCKED HEADER -->
+    <header>
+        <div class="header-brand">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;" aria-label="INTERA Home">
+                <img src="logo and favicon/logo.svg" alt="INTERA Logo" class="brand-logo-img">
+                <span class="logo">INTERA</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flat-page.html">Products</a></li>
+                <li><a href="catalog-page.html" class="active">Catalog</a></li>
+                <li><a href="application-page.html">Application</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="story-page.html">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 50vh MACRO HERO HEADER -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="hero-tag">Material Category · 02</span>
+                <h1>PREMIUM LAMINATE COLLECTION</h1>
+                <p class="lead">
+                    Our widest palette — over a hundred decors. Natural woods, solid colours across whites, greys, greens, blues and terracottas, plus stone, concrete, and metal looks. Formulated for extreme scratch resistance and high-traffic performance.
+                </p>
+                <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="catalog-page.html" class="btn-outline">&larr; All Categories</a>
+                    <a href="contact-page.html" class="btn-primary">Order Swatch Binder</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUB-NAVIGATION BAR (Catalogs) -->
+        <div style="background: #f4f4f4; border-bottom: 1px solid var(--border-light); padding: 15px 0;">
+            <div class="container" style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
+                <a href="catalog-melamine.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">1. Synchronized Wood</a>
+                <a href="catalog-laminate.html" style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dark); border-bottom: 2px solid var(--text-dark); padding-bottom: 4px;">2. Premium Laminate</a>
+                <a href="catalog-acrylic.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">3. Matte Acrylic</a>
+                <a href="catalog-veneer.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">4. Real Veneer</a>
+                <a href="catalog-metals.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">5. Architectural Metals</a>
+            </div>
+        </div>
+
+        <!-- SWATCH GALLERY -->
+        <section style="background: var(--bg-white);">
+            <div class="container">
+                <h2 class="section-title">100+ LAMINATE DECORS</h2>
+                <p class="section-subtitle">Click any swatch to open the high-resolution quick-view modal.</p>
+
+                <div class="swatch-grid">
+                    <!-- Featured Submains -->
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/MAIN/H3311ST10.png', 'H3311ST10 Bleached Cuneo Oak', 'Pale open grain Scandinavian oak')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/MAIN/H3311ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3311ST10</div><div class="swatch-desc">Bleached Cuneo Oak</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/SUBMAIN/F500ST20.png', 'F500ST20 Metallic Inox', 'Brushed metallic steel decor')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/SUBMAIN/F500ST20.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F500ST20</div><div class="swatch-desc">Metallic Inox</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/SUBMAIN/H3702ST10.png', 'H3702ST10 Tobacco Pacific Walnut', 'Dark rich repeating walnut grain')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/SUBMAIN/H3702ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3702ST10</div><div class="swatch-desc">Tobacco Pacific Walnut</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/SUBMAIN/U702ST9.png', 'U702ST9 Cashmere Grey', 'Soft warm architectural grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/SUBMAIN/U702ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U702ST9</div><div class="swatch-desc">Cashmere Grey Solid</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/SUBMAIN/W1100ST9.png', 'W1100ST9 Alpine White', 'Clean neutral matte white')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/SUBMAIN/W1100ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">W1100ST9</div><div class="swatch-desc">Alpine White</div></div>
+                    </div>
+
+                    <!-- Additional Stones & Minerals -->
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F227ST78.png', 'F227ST78 Titan Ceramic', 'High performance ceramic concrete finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F227ST78.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F227ST78</div><div class="swatch-desc">Titan Ceramic</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F228ST78.png', 'F228ST78 Anthracite Ceramic', 'Deep charcoal ceramic texture')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F228ST78.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F228ST78</div><div class="swatch-desc">Anthracite Ceramic</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F229ST75.png', 'F229ST75 White Marble', 'Crisp architectural vein marble')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F229ST75.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F229ST75</div><div class="swatch-desc">White Marble Texture</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F234ST76.png', 'F234ST76 Scivaro Slate', 'Dark mineral slate structure')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F234ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F234ST76</div><div class="swatch-desc">Scivaro Slate</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F302ST76.png', 'F302ST76 Ferro Bronze', 'Oxidized bronze metallic sheen')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F302ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F302ST76</div><div class="swatch-desc">Ferro Bronze</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F416ST10.png', 'F416ST10 Beige Textile', 'Refined architectural fabric weave decor')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F416ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F416ST10</div><div class="swatch-desc">Beige Textile Weave</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F417ST10.png', 'F417ST10 Grey Textile', 'Modern grey fabric weave surface')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F417ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F417ST10</div><div class="swatch-desc">Grey Textile Weave</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F528ST20.png', 'F528ST20 Brushed Aluminium', 'Clean industrial metallic aluminium')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F528ST20.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F528ST20</div><div class="swatch-desc">Brushed Aluminium</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F637ST76.png', 'F637ST76 White Chromix', 'Plaster and polished concrete look')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F637ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F637ST76</div><div class="swatch-desc">White Chromix Plaster</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F638ST76.png', 'F638ST76 Silver Chromix', 'Silver mineral plaster decor')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F638ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F638ST76</div><div class="swatch-desc">Silver Chromix Plaster</div></div>
+                    </div>
+
+                    <!-- Woodgrains -->
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1145ST10.png', 'H1145ST10 Natural Bardolino Oak', 'Authentic open pore oak decor')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1145ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1145ST10</div><div class="swatch-desc">Natural Bardolino Oak</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1181ST10.png', 'H1181ST10 Tobacco Halifax Oak', 'Dark rustic crack oak')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1181ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1181ST10</div><div class="swatch-desc">Tobacco Halifax Oak</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1204ST22.png', 'H1204ST22 White Tossini Elm', 'Fine Scandinavian elm grain')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1204ST22.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1204ST22</div><div class="swatch-desc">White Tossini Elm</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1379ST22.png', 'H1379ST22 Brown Orleans Oak', 'Refined architectural brown oak')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1379ST22.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1379ST22</div><div class="swatch-desc">Brown Orleans Oak</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H309ST12.png', 'H309ST12 Arlington Oak', 'Classic warm architectural oak')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H309ST12.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H309ST12</div><div class="swatch-desc">Arlington Oak</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3156ST12.png', 'H3156ST12 Corbridge Oak', 'Subtle fine-pore natural oak')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3156ST12.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3156ST12</div><div class="swatch-desc">Corbridge Oak</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3303ST10.png', 'H3303ST10 Natural Hamilton Oak', 'Striking contrasting oak cathedrals')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3303ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3303ST10</div><div class="swatch-desc">Natural Hamilton Oak</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3730ST10.png', 'H3730ST10 Natural Hickory', 'Warm, dynamic hickory grain pattern')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3730ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3730ST10</div><div class="swatch-desc">Natural Hickory</div></div>
+                    </div>
+
+                    <!-- Solids (U-Series) -->
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U115ST9.png', 'U115ST9 Karat Beige', 'Warm architectural sand solid tone')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U115ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U115ST9</div><div class="swatch-desc">Karat Beige Solid</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U201ST9.png', 'U201ST9 Pebble Grey', 'Versatile modern mid-grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U201ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U201ST9</div><div class="swatch-desc">Pebble Grey Solid</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U608ST9.png', 'U608ST9 Pistachio Green', 'Muted botanical architectural green')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U608ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U608ST9</div><div class="swatch-desc">Pistachio Green Solid</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U636ST9.png', 'U636ST9 Fjord Green', 'Deep Nordic fjord green solid')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U636ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U636ST9</div><div class="swatch-desc">Fjord Green Solid</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U708ST76.png', 'U708ST76 Light Grey', 'Soft warm architectural light grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U708ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U708ST76</div><div class="swatch-desc">Light Grey Solid</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U788ST9.png', 'U788ST9 Arctic Grey', 'Cool modern minimal slate grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U788ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U788ST9</div><div class="swatch-desc">Arctic Grey Solid</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/W1200ST9.png', 'W1200ST9 Porcelain White', 'Rich off-white architectural tone')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/W1200ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">W1200ST9</div><div class="swatch-desc">Porcelain White</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="event-banner">IWF Atlanta 2026 · Booth C613 · August 25–28</div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Universal Lightbox / Modal -->
+    <div id="universalModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-media" id="modalMediaContainer"></div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top & Cookie Banner -->
+    <a href="#top" id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top" style="opacity: 0; pointer-events: none;">&#8593;</a>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div>
+            <strong>We value your privacy.</strong> 
+            <p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

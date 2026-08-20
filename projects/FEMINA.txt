@@ -1,0 +1,8 @@
+FEMINA
+
+A specialty lingerie retailer, fitted out to one repeating standard across every store in the chain.
+
+NOTE: consider publishing this project without the brand name - "a retail chain fitted
+out to one repeating standard across every store". The claim that matters here is
+repeatability across many locations, which no other project in this set demonstrates.
+The name adds little and identifies the market.

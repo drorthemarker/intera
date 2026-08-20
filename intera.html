@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury custom cabinet fronts and architectural doors for B2B professionals. Precision-milled for European frameless cabinetry.">
+    <title>INTERA CABINET DOORS | Made Different. Built to Last.</title>
+    <style>
+        /* CSS Variables & Smooth Scrolling */
+        :root { --bg-white: #fff; --bg-gray: #f9f9f9; --text-dark: #1a1a1a; --text-gray: #555; }
+        html { scroll-behavior: smooth; }
+
+        /* Architectural, Premium Styling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; color: var(--text-dark); background: var(--bg-white); line-height: 1.6; overflow-x: hidden;}
+        a { text-decoration: none; color: inherit; }
+        
+        /* Master Container */
+        .container { max-width: 1400px; margin: 0 auto; width: 100%; padding: 0 50px; box-sizing: border-box;}
+
+        /* 1. LOCKED HEADER (80px height) */
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 0 50px; 
+            height: 80px; 
+            background: rgba(255,255,255,0.98); 
+            border-bottom: 1px solid #eee; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            backdrop-filter: blur(10px);
+            box-sizing: border-box;
+        }
+        .logo { font-size: 22px; font-weight: 700; letter-spacing: 3px; }
+        nav ul { list-style: none; display: flex; gap: 30px; margin: 0; padding: 0; align-items: center; }
+        nav ul li a { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray); transition: 0.2s;}
+        nav ul li a:hover { color: var(--text-dark); }
+        
+        /* ADA Focus States */
+        a:focus-visible, button:focus-visible { outline: 2px solid var(--text-dark); outline-offset: 4px; }
+
+        /* Buttons */
+        .btn-primary { background: var(--text-dark); color: #fff !important; padding: 12px 24px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: inline-block; transition: 0.3s; border: 1px solid var(--text-dark); cursor: pointer;}
+        .btn-primary:hover { background: #444; border-color: #444;}
+        .btn-outline { border: 1px solid var(--text-dark); color: var(--text-dark); padding: 12px 24px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: inline-block; transition: 0.3s; cursor: pointer;}
+        .btn-outline:hover { background: var(--text-dark); color: #fff; }
+        .btn-text { display: inline-block; margin-top: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dark); transition: 0.3s; border-bottom: 1px solid transparent;}
+        .btn-text:hover { color: var(--text-gray); border-bottom: 1px solid var(--text-gray); padding-bottom: 2px;}
+
+        /* Global Section Spacing */
+        section { padding: 120px 0; text-align: center; }
+        .section-title { font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; }
+        .section-subtitle { font-size: 16px; color: var(--text-gray); margin-bottom: 80px; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+        /* 2. THE MATHEMATICAL HERO SECTION */
+        .hero-split { 
+            display: flex; 
+            height: calc(100vh - 170px); 
+            min-height: 500px; 
+            background: var(--bg-white); 
+            padding: 0; 
+            align-items: center; 
+            box-sizing: border-box;
+        }
+        
+        .hero-text-side {
+            flex: 1;
+            display: flex;
+            justify-content: center; 
+            padding: 0 50px;
+        }
+
+        .hero-text-content {
+            max-width: 550px; 
+            text-align: left; 
+        }
+        
+        .hero-text-content h1 { 
+            font-size: 52px; 
+            font-weight: 700; 
+            margin-bottom: 20px; 
+            letter-spacing: -1px; 
+            line-height: 1.1;
+            color: var(--text-dark);
+        }
+        
+        .hero-text-content p.practical { 
+            font-size: 20px; 
+            font-weight: 400; 
+            margin-bottom: 15px; 
+            color: var(--text-gray);
+        }
+        
+        .hero-text-content p.identity { 
+            font-size: 14px; 
+            font-weight: 600; 
+            margin-bottom: 40px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            color: var(--text-dark);
+            border-left: 2px solid var(--text-dark);
+            padding-left: 15px;
+        }
+        
+        .hero-buttons { 
+            display: flex; 
+            gap: 20px; 
+            justify-content: flex-start; 
+        }
+
+        /* ------------------------------------------- */
+        /* IMAGE SLIDER CSS (HERO SECTION)             */
+        /* ------------------------------------------- */
+        .hero-image-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 80px 40px 0; 
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .hero-slider {
+            width: 100%;
+            max-width: 550px; 
+            height: 100%;
+            max-height: 60vh;
+            position: relative;
+            border-radius: 8px; 
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08); 
+            overflow: hidden;
+        }
+
+        /* The images stack on top of each other and fade */
+        .hero-slider img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .hero-slider img.active {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        /* Slider Navigation Dots */
+        .slider-dots {
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 10;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid #fff;
+            cursor: pointer;
+            transition: 0.3s;
+            padding: 0;
+        }
+
+        .slider-dot.active {
+            background: #fff;
+            transform: scale(1.3);
+        }
+
+        /* 3. LOCKED BLACK PROMISE BAR (90px height) */
+        .promise-bar { 
+            background: var(--text-dark); 
+            color: #fff; 
+            height: 90px; 
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center;
+            text-transform: uppercase; 
+            letter-spacing: 3px; 
+            font-weight: 600; 
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        /* Products Grid (White) */
+        .products-section { background: var(--bg-white); }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+        .card { display: block; text-decoration: none; text-align: center; overflow: hidden; }
+        .card-img-wrapper { overflow: hidden; height: 420px; width: 100%; margin-bottom: 25px; background: #eee; cursor: crosshair; }
+        .card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; display: block; }
+        .card h3 { font-size: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 5px 0; color: var(--text-dark); transition: 0.3s; }
+        .card:hover h3 { color: var(--text-gray); }
+        .card p { font-size: 14px; color: #666; margin: 0; }
+
+        /* Catalog Section (Gray) */
+        .catalog-section { background: var(--bg-gray); border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .palette-card { text-align: left; background: #fff; padding: 40px; border: 1px solid #eee; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between;}
+        .palette-card:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-color: #ddd;}
+        .main-swatch { width: 100%; height: 200px; margin-bottom: 20px; border-radius: 4px; background-size: cover; background-position: center; transition: background 0.3s ease; border: 1px solid #eee;}
+        .thumb-row { display: flex; gap: 10px; margin-bottom: 30px; }
+        .thumb { flex: 1; height: 40px; border-radius: 4px; cursor: pointer; border: 1px solid #e0e0e0; background-size: cover; background-position: center; transition: 0.2s; opacity: 0.7;}
+        .thumb:hover, .thumb:focus-visible { opacity: 1; border-color: var(--text-dark); transform: translateY(-2px);}
+        .palette-card h3 { font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 10px 0; border-bottom: 2px solid var(--text-dark); padding-bottom: 10px; display: inline-block;}
+        .palette-card p { font-size: 14px; color: var(--text-gray); margin: 0; line-height: 1.6;}
+
+        /* Split Sections (App, Projects, Story) */
+        .split-wrapper { background: var(--bg-white); }
+        .split-wrapper.reverse { background: var(--bg-gray); border-top: 1px solid #eee; }
+        .split-section { display: flex; align-items: center; gap: 60px; text-align: left;} 
+        .split-text { flex: 1; max-width: 500px; }
+        .split-text h2 { font-size: 34px; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.5px; line-height: 1.2;}
+        .split-text p { font-size: 16px; color: var(--text-gray); margin-bottom: 35px; line-height: 1.8;}
+        .split-image { flex: 1; }
+        .split-image img { width: 100%; height: 500px; object-fit: cover; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: block; border-radius: 4px;}
+
+        /* Story Gallery Masonry Grid */
+        .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 240px 240px; gap: 20px; }
+        .video-thumb { position: relative; width: 100%; height: 100%; border-radius: 4px; overflow: hidden; cursor: pointer; background: #000; }
+        .video-thumb img { width: 100%; height: 100%; object-fit: cover; opacity: 1; transition: 0.4s ease; display: block; }
+        .video-thumb::after { 
+            content: '▶'; color: #fff; font-size: 24px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.9);
+            background: rgba(0,0,0,0.6); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+            opacity: 0; transition: 0.4s ease; backdrop-filter: blur(2px); border: 1px solid rgba(255,255,255,0.3);
+        }
+        .video-thumb:hover img { opacity: 0.8; transform: scale(1.05); }
+        .video-thumb:hover::after { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        .gallery-grid .video-thumb:nth-child(1) { grid-row: 1 / span 2; } 
+
+        /* About Teaser Section */
+        .about-teaser { background: #1a1a1a; color: #fff; padding: 100px 0; }
+        .about-teaser .section-title { color: #fff; }
+        .about-teaser .section-subtitle { color: #aaa; margin-bottom: 40px; }
+        .about-content { max-width: 800px; margin: 0 auto; text-align: left; font-size: 16px; color: #ccc; line-height: 1.8; }
+        .about-content p { margin-bottom: 25px; }
+
+        /* Footer */
+        footer { background: #111; color: #fff; padding: 80px 50px 40px; text-align: center; border-top: 1px solid #333;}
+        .event-banner { background: #222; padding: 15px; margin-bottom: 50px; font-weight: 600; letter-spacing: 1px; font-size: 14px; border: 1px solid #444; max-width: 1400px; margin-left: auto; margin-right: auto;}
+        .footer-links { margin-top: 30px; display: flex; justify-content: center; gap: 20px; font-size: 12px; color: #888;}
+        .footer-links a { color: #888; text-decoration: underline; }
+        .footer-links a:hover { color: #fff; }
+        
+        /* Floating Scroll to Top Arrow */
+        .scroll-top { position: fixed; bottom: 30px; right: 30px; background: var(--text-dark); color: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: 0.3s; z-index: 1000; border: 1px solid #fff;}
+        .scroll-top:hover { background: #444; transform: translateY(-3px);}
+
+        /* Cookie Consent Banner */
+        .cookie-banner { position: fixed; bottom: -100px; left: 50%; transform: translateX(-50%); background: #1a1a1a; color: #fff; padding: 20px 40px; border-radius: 8px; z-index: 9999; display: flex; align-items: center; justify-content: space-between; gap: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); transition: bottom 0.5s ease; font-size: 13px; width: 90%; max-width: 800px; border: 1px solid #333;}
+        .cookie-banner.show { bottom: 30px; }
+        .cookie-buttons { display: flex; gap: 15px; align-items: center;}
+        .cookie-btn { background: #fff; color: #1a1a1a; border: none; padding: 10px 20px; cursor: pointer; font-weight: 600; font-family: 'Inter', sans-serif; border-radius: 4px; text-transform: uppercase; font-size: 12px; transition: 0.3s;}
+        .cookie-btn:hover { background: #ccc; }
+        .cookie-btn.decline { background: transparent; color: #aaa; text-decoration: underline; padding: 10px 5px; }
+
+        /* Mobile Responsiveness Media Queries */
+        @media (max-width: 1024px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            header { flex-direction: column; gap: 15px; padding: 15px 20px; height: auto;}
+            .hero-split { height: auto; min-height: 500px; }
+        }
+        @media (max-width: 900px) {
+            .hero-split { flex-direction: column; padding-top: 40px; }
+            .hero-text-side { padding: 0 30px; text-align: center; }
+            .hero-text-content { text-align: center; }
+            .hero-text-content h1 { font-size: 42px; }
+            .hero-text-content p.identity { border-left: none; padding-left: 0; }
+            .hero-buttons { justify-content: center; flex-direction: column;}
+            
+            .hero-image-side { padding: 40px 30px; height: auto; width: 100%;}
+            .hero-slider { height: 400px; max-height: none;}
+            
+            .promise-bar { height: auto; padding: 30px 20px; flex-direction: column; gap: 15px;}
+        }
+        @media (max-width: 768px) {
+            .split-section { flex-direction: column; text-align: center; padding: 80px 20px; gap: 40px;}
+            .split-wrapper.reverse .split-section { flex-direction: column; }
+            .split-text { padding: 0 !important; }
+            .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(3, 200px); }
+            .gallery-grid .video-thumb:nth-child(1) { grid-row: auto; } 
+            .cookie-banner { flex-direction: column; text-align: center; gap: 15px; padding: 20px;}
+        }
+        @media (max-width: 480px) {
+            .grid-4 { grid-template-columns: 1fr; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <!-- 1. HEADER -->
+    <header>
+        <div class="logo">INTERA</div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="catalog-page.html">Catalog</a></li>
+                <li><a href="application-page.html">Application</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="story-page.html">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. SCANDINAVIAN HERO WITH IMAGE SLIDER -->
+    <section class="hero-split" aria-label="Welcome to INTERA">
+        
+        <!-- Left Side: Clean Typography -->
+        <div class="hero-text-side">
+            <div class="hero-text-content">
+                <h1>It looks simple.<br>That’s the magic.</h1>
+                <p class="practical">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+                <p class="identity">We don’t make another cabinet door. We make yours.</p>
+                
+                <div class="hero-buttons">
+                    <a href="catalog-page.html" class="btn-primary">Get the catalog</a>
+                    <a href="https://your-app-link.com" target="_blank" rel="noopener noreferrer" class="btn-outline">Open Application</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Auto-Slider -->
+        <div class="hero-image-side">
+            <div class="hero-slider" id="mainSlider">
+                
+                <!-- Your 4 Images -->
+                <img src="file:///C:/Users/dror_/Desktop/interetz%20site/product/H309ST9%20FLAT%20free.png" alt="Flat Door" class="active">
+                <img src="file:///C:/Users/dror_/Desktop/interetz%20site/product/Kashmir85468VM%20FINO%20free.png" alt="Fino Door">
+                <img src="file:///C:/Users/dror_/Desktop/interetz%20site/product/Rusted%20Iron%20free.png" alt="Rusted Iron Door">
+                <img src="file:///C:/Users/dror_/Desktop/interetz%20site/product/VENEER%20MARCO%20free.png" alt="Veneer Marco Door">
+
+                <!-- The 4 Navigation Dots -->
+                <div class="slider-dots">
+                    <button class="slider-dot active" aria-label="Slide 1" onclick="setSlide(0)"></button>
+                    <button class="slider-dot" aria-label="Slide 2" onclick="setSlide(1)"></button>
+                    <button class="slider-dot" aria-label="Slide 3" onclick="setSlide(2)"></button>
+                    <button class="slider-dot" aria-label="Slide 4" onclick="setSlide(3)"></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 3. CORE PROMISES -->
+    <div class="promise-bar" aria-label="Our Core Promises">
+        <span>Precise.</span>
+        <span>Durable.</span>
+        <span>Designed.</span>
+    </div>
+
+    <!-- PRODUCTS WITH MAGNIFIER -->
+    <section class="products-section" aria-labelledby="products-title">
+        <div class="container">
+            <h2 id="products-title" class="section-title">MADE DIFFERENT. BUILT TO LAST.</h2>
+            <p class="section-subtitle">Precision-milled for European frameless cabinetry, offering seamless compatibility with the IKEA SEKTION system. Every INTERA front is built on a moisture-resistant core. One design. Almost any material.</p>
+            
+            <div class="grid-4">
+                <a href="flat-page.html" class="card" aria-label="View Flat Doors">
+                    <div class="card-img-wrapper zoom-container">
+                        <img src="file:///C:/Users/dror_/Desktop/פיתוח חיצוני/interetz/אתר תדמית/material-acrylic.jpg" alt="Flat Doors">
+                    </div>
+                    <h3>FLAT</h3>
+                    <p>Synchronized Laminate, HPL, Acrylic</p>
+                </a>
+
+                <a href="shaker-page.html" class="card" aria-label="View Shaker Doors">
+                    <div class="card-img-wrapper zoom-container">
+                        <img src="file:///C:/Users/dror_/Desktop/פיתוח חיצוני/interetz/אתר תדמית/material-laminate.jpg" alt="Shaker Doors">
+                    </div>
+                    <h3>SHAKER</h3>
+                    <p>10mm, 20mm, 50mm, Vitrine</p>
+                </a>
+
+                <a href="handles-page.html" class="card" aria-label="View Integrated Handles">
+                    <div class="card-img-wrapper zoom-container">
+                        <img src="file:///C:/Users/dror_/Desktop/פיתוח חיצוני/interetz/אתר תדמית/material-melamine.jpg" alt="Integrated Handles">
+                    </div>
+                    <h3>HANDLES</h3>
+                    <p>Suave & Fino Milled Profiles</p>
+                </a>
+
+                <a href="specials-page.html" class="card" aria-label="View Special Materials">
+                    <div class="card-img-wrapper zoom-container">
+                        <img src="file:///C:/Users/dror_/Desktop/פיתוח חיצוני/interetz/אתר תדמית/material-iron.jpg" alt="Special Materials">
+                    </div>
+                    <h3>SPECIALS</h3>
+                    <p>Real Iron & Brushed Stainless</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR CATALOG -->
+    <section class="catalog-section" aria-labelledby="catalog-title">
+        <div class="container">
+            <h2 id="catalog-title" class="section-title">ONE DESIGN. ALMOST ANY MATERIAL.</h2>
+            <p class="section-subtitle">A curated palette of roughly 150 finishes, engineered to carry your specific design seamlessly across every front in your project.</p>
+            
+            <div class="grid-4" style="margin-bottom: 80px;">
+                
+                <!-- Palette 1 -->
+                <div class="palette-card">
+                    <div>
+                        <div class="main-swatch" id="main-1" style="background: #1c1c1c;"></div>
+                        <div class="thumb-row">
+                            <button class="thumb" aria-label="Preview color 1" style="background: #1c1c1c;" onmouseover="changeSwatch('main-1', this.style.background)" onfocus="changeSwatch('main-1', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color 2" style="background: #4a5356;" onmouseover="changeSwatch('main-1', this.style.background)" onfocus="changeSwatch('main-1', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color 3" style="background: #9fa09d;" onmouseover="changeSwatch('main-1', this.style.background)" onfocus="changeSwatch('main-1', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color 4" style="background: #e8e6df;" onmouseover="changeSwatch('main-1', this.style.background)" onfocus="changeSwatch('main-1', this.style.background)"></button>
+                        </div>
+                        <h3>VELVET SOLIDS</h3>
+                        <p>Anti-fingerprint satin and velvet finishes in deep, continuous tones. No gloss.</p>
+                    </div>
+                    <a href="catalog-page.html" class="btn-text">Explore &rarr;</a>
+                </div>
+
+                <!-- Palette 2 -->
+                <div class="palette-card">
+                    <div>
+                        <div class="main-swatch" id="main-2" style="background: #4a3424;"></div>
+                        <div class="thumb-row">
+                            <button class="thumb" aria-label="Preview color" style="background: #4a3424;" onmouseover="changeSwatch('main-2', this.style.background)" onfocus="changeSwatch('main-2', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color" style="background: #876241;" onmouseover="changeSwatch('main-2', this.style.background)" onfocus="changeSwatch('main-2', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color" style="background: #a98562;" onmouseover="changeSwatch('main-2', this.style.background)" onfocus="changeSwatch('main-2', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color" style="background: #d4c0a8;" onmouseover="changeSwatch('main-2', this.style.background)" onfocus="changeSwatch('main-2', this.style.background)"></button>
+                        </div>
+                        <h3>SYNCHRONIZED WOOD</h3>
+                        <p>Thermally fused decors where the surface texture sits in perfect register with the grain.</p>
+                    </div>
+                    <a href="catalog-page.html" class="btn-text">Explore &rarr;</a>
+                </div>
+
+                <!-- Palette 3 -->
+                <div class="palette-card">
+                    <div>
+                        <div class="main-swatch" id="main-3" style="background: #36251b;"></div>
+                        <div class="thumb-row">
+                            <button class="thumb" aria-label="Preview color" style="background: #36251b;" onmouseover="changeSwatch('main-3', this.style.background)" onfocus="changeSwatch('main-3', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color" style="background: #6e4e32;" onmouseover="changeSwatch('main-3', this.style.background)" onfocus="changeSwatch('main-3', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color" style="background: #9f7d59;" onmouseover="changeSwatch('main-3', this.style.background)" onfocus="changeSwatch('main-3', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color" style="background: #cbb493;" onmouseover="changeSwatch('main-3', this.style.background)" onfocus="changeSwatch('main-3', this.style.background)"></button>
+                        </div>
+                        <h3>GENUINE VENEERS</h3>
+                        <p>Real wood veneers in oak, walnut, and reconstructed engineered grain.</p>
+                    </div>
+                    <a href="catalog-page.html" class="btn-text">Explore &rarr;</a>
+                </div>
+
+                <!-- Palette 4 -->
+                <div class="palette-card">
+                    <div>
+                        <div class="main-swatch" id="main-4" style="background: linear-gradient(135deg, #555, #222);"></div>
+                        <div class="thumb-row">
+                            <button class="thumb" aria-label="Preview color" style="background: linear-gradient(135deg, #555, #222);" onmouseover="changeSwatch('main-4', this.style.background)" onfocus="changeSwatch('main-4', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color" style="background: linear-gradient(135deg, #a0a0a0, #666);" onmouseover="changeSwatch('main-4', this.style.background)" onfocus="changeSwatch('main-4', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color" style="background: linear-gradient(135deg, #d3d3d3, #999);" onmouseover="changeSwatch('main-4', this.style.background)" onfocus="changeSwatch('main-4', this.style.background)"></button>
+                            <button class="thumb" aria-label="Preview color" style="background: #111;" onmouseover="changeSwatch('main-4', this.style.background)" onfocus="changeSwatch('main-4', this.style.background)"></button>
+                        </div>
+                        <h3>ARCHITECTURAL METALS</h3>
+                        <p>Raw pickled steel and kitchen-grade brushed stainless.</p>
+                    </div>
+                    <a href="catalog-page.html" class="btn-text">Explore &rarr;</a>
+                </div>
+
+            </div>
+
+            <a href="catalog-page.html" class="btn-primary">Explore all colors</a>
+        </div>
+    </section>
+
+    <!-- OUR APPLICATION -->
+    <section class="split-wrapper" aria-label="Our Ordering Application">
+        <div class="container split-section">
+            <div class="split-image">
+                <img src="file:///C:/Users/dror_/Desktop/פיתוח חיצוני/interetz/אתר תדמית/sys.png" alt="INTERA Ordering Application Interface">
+            </div>
+            <div class="split-text">
+                <h2>Your exact dimensions. It fits the first time.</h2>
+                <p>We don’t make another cabinet door. We make yours. Through our proprietary application, you command the exact measurements, materials, and profiles required for your project.</p>
+                <p>Every front is precision-calibrated and engineered for your specific design, guaranteeing a flawless fit upon arrival. Worth it, across the whole chain.</p>
+                <br>
+                <a href="application-page.html" class="btn-primary">See how the app works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS (NASDAQ Teaser) -->
+    <section class="split-wrapper reverse" aria-label="Featured Projects">
+        <div class="container split-section">
+            <div class="split-text" style="padding-right: 40px;">
+                <h2>Engineered for Enterprise.</h2>
+                <p>From luxury residential developments to commercial spaces for NASDAQ-listed technology giants, our architectural fronts are chosen for high-traffic, high-profile environments.</p>
+                <p>When consistency and durability are paramount, professionals trust INTERA to deliver architectural-grade quality at scale.</p>
+                <br>
+                <a href="projects.html" class="btn-outline">View portfolio</a>
+            </div>
+            <div class="split-image">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Luxury Corporate Kitchen Project">
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="split-wrapper" aria-label="Our Factory Story">
+        <div class="container split-section">
+            <div class="split-image">
+                <div class="gallery-grid">
+                    <a href="story-page.html" class="video-thumb" aria-label="Watch Precision Milling Video">
+                        <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=600&q=80" alt="Factory CNC Machine">
+                    </a>
+                    <a href="story-page.html" class="video-thumb" aria-label="Watch Coating Process Video">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80" alt="Materials and Edging">
+                    </a>
+                    <a href="story-page.html" class="video-thumb" aria-label="Watch Packaging Video">
+                        <img src="https://images.unsplash.com/photo-1621252171032-4767137f2af4?auto=format&fit=crop&w=400&q=80" alt="Finished Doors">
+                    </a>
+                </div>
+            </div>
+            <div class="split-text" style="padding-left: 40px;">
+                <h2>The space where it happens.</h2>
+                <p>Behind every INTERA front is a meticulously calibrated environment. This is our factory, our office, and where your project comes to life.</p>
+                <p>We build exclusively on a <strong>moisture-resistant core</strong>. Our edges are bonded with a <strong>waterproof adhesive</strong>, leaving no dark line and no seam you can feel.</p>
+                <br>
+                <a href="story-page.html" class="btn-outline">Watch the process</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US TEASER -->
+    <section class="about-teaser" aria-label="About the Team">
+        <div class="container">
+            <h2 class="section-title">The People Behind the Process</h2>
+            <p class="section-subtitle">Engineers. Designers. Managers. A team dedicated to delivering the exact product you specified.</p>
+            
+            <div class="about-content">
+                <p>At INTERA, we believe that advanced manufacturing is only as good as the professionals running it. Our management team bridges the gap between software engineering and architectural design.</p>
+                <p>Every order processed through our application is overseen by experts who understand the rigorous demands of B2B projects, large-scale kitchen designs, and individual custom builds. We don't just supply materials; we provide a professional partnership.</p>
+                
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="about-page.html" class="btn-outline" style="border-color: #fff; color: #fff;">Meet the team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="event-banner">
+            IWF Atlanta 2026 · Booth C613 · August 25–28
+        </div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- SCROLL TO TOP ARROW -->
+    <a href="#top" class="scroll-top" aria-label="Scroll back to top">&#8593;</a>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div>
+            <strong>We value your privacy.</strong> 
+            <p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="acceptCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // ----------------------------------------------------
+        // 1. HERO IMAGE SLIDER LOGIC
+        // ----------------------------------------------------
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slider img');
+        const dots = document.querySelectorAll('.slider-dot');
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = currentSlide + 1;
+            if (next >= slides.length) next = 0;
+            showSlide(next);
+        }
+
+        function setSlide(index) {
+            showSlide(index);
+            // Reset the timer when a user clicks a dot so it doesn't double-skip
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000); 
+        }
+
+        /* 
+           NOTE: 1000 = 1 second. 
+           If this feels too fast or dizzying for your users, 
+           change the "1000" below and above to "3000" (3 seconds). 
+        */
+        slideInterval = setInterval(nextSlide, 2500); 
+
+
+        // ----------------------------------------------------
+        // 2. INTERACTIVE CATALOG SWATCHES
+        // ----------------------------------------------------
+        function changeSwatch(mainSwatchId, newBackground) {
+            document.getElementById(mainSwatchId).style.background = newBackground;
+        }
+
+
+        // ----------------------------------------------------
+        // 3. MAGNIFYING GLASS EFFECT ON PRODUCTS (Desktop Only)
+        // ----------------------------------------------------
+        if (window.innerWidth > 768) {
+            document.querySelectorAll('.zoom-container').forEach(container => {
+                const img = container.querySelector('img');
+                
+                container.addEventListener('mousemove', (e) => {
+                    const rect = container.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    const xPercent = (x / rect.width) * 100;
+                    const yPercent = (y / rect.height) * 100;
+                    
+                    img.style.transformOrigin = `${xPercent}% ${yPercent}%`;
+                    img.style.transform = 'scale(2)';
+                });
+
+                container.addEventListener('mouseleave', () => {
+                    img.style.transformOrigin = 'center center';
+                    img.style.transform = 'scale(1)';
+                });
+            });
+        }
+
+
+        // ----------------------------------------------------
+        // 4. COOKIE BANNER LOGIC
+        // ----------------------------------------------------
+        window.onload = function() {
+            if (!localStorage.getItem('intera_cookies_accepted')) {
+                setTimeout(() => {
+                    document.getElementById('cookieBanner').classList.add('show');
+                }, 1500);
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('intera_cookies_accepted', 'true');
+            document.getElementById('cookieBanner').classList.remove('show');
+        }
+    </script>
+
+</body>
+</html>

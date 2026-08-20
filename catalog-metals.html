@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INTERA Architectural Metals Catalog | Real black iron, locked rusted iron patina, and marine-grade brushed stainless steel 316 cabinet fronts.">
+    <title>Metals Catalog | INTERA</title>
+    <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- LOCKED HEADER -->
+    <header>
+        <div class="header-brand">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;" aria-label="INTERA Home">
+                <img src="logo and favicon/logo.svg" alt="INTERA Logo" class="brand-logo-img">
+                <span class="logo">INTERA</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flat-page.html">Products</a></li>
+                <li><a href="catalog-page.html" class="active">Catalog</a></li>
+                <li><a href="application-page.html">Application</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="story-page.html">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 50vh MACRO HERO HEADER -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="hero-tag">Material Category · 05</span>
+                <h1>ARCHITECTURAL REAL METALS</h1>
+                <p class="lead">
+                    Three authentic metallic finishes: raw black iron, chemically locked rusted iron patina, and kitchen-grade brushed stainless steel 316. Each bonded to an engineered moisture-resistant core for seamless integration into European cabinetry.
+                </p>
+                <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="catalog-page.html" class="btn-outline">&larr; All Categories</a>
+                    <a href="contact-page.html" class="btn-primary">Request Metal Samples</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUB-NAVIGATION BAR (Catalogs) -->
+        <div style="background: #f4f4f4; border-bottom: 1px solid var(--border-light); padding: 15px 0;">
+            <div class="container" style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
+                <a href="catalog-melamine.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">1. Synchronized Wood</a>
+                <a href="catalog-laminate.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">2. Premium Laminate</a>
+                <a href="catalog-acrylic.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">3. Matte Acrylic</a>
+                <a href="catalog-veneer.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">4. Real Veneer</a>
+                <a href="catalog-metals.html" style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dark); border-bottom: 2px solid var(--text-dark); padding-bottom: 4px;">5. Architectural Metals</a>
+            </div>
+        </div>
+
+        <!-- SWATCH GALLERY -->
+        <section style="background: var(--bg-white);">
+            <div class="container">
+                <h2 class="section-title">REAL METAL FINISH LIBRARY</h2>
+                <p class="section-subtitle">Click any swatch to open the high-resolution quick-view modal.</p>
+
+                <div class="swatch-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+                    <div class="swatch-item" onclick="openImageModal('catalog/5. METALS/MAIN/BLACK_IRON_FLAT.jpg', 'Black Iron Slab Front', 'Raw pickled steel · Deep matte graphite depth on moisture-resistant core.')">
+                        <div class="swatch-preview" style="background-image: url('catalog/5. METALS/MAIN/BLACK_IRON_FLAT.jpg'); height: 220px;"></div>
+                        <div class="swatch-info"><div class="swatch-code">BLACK IRON FLAT</div><div class="swatch-desc">Pickled Black Steel · Matte Depth</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/5. METALS/SUBMAIN/RUSTED_IRON_01.png', 'Rusted Iron 01', 'Natural iron oxidation · Chemically locked warm amber tone.')">
+                        <div class="swatch-preview" style="background-image: url('catalog/5. METALS/SUBMAIN/RUSTED_IRON_01.png'); height: 220px;"></div>
+                        <div class="swatch-info"><div class="swatch-code">RUSTED IRON 01</div><div class="swatch-desc">Warm Patina Oxide</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/5. METALS/SUBMAIN/RUSTED_IRON_02.png', 'Rusted Iron 02', 'Deeper oxide tone · Rich copper and burnt terracotta nuances.')">
+                        <div class="swatch-preview" style="background-image: url('catalog/5. METALS/SUBMAIN/RUSTED_IRON_02.png'); height: 220px;"></div>
+                        <div class="swatch-info"><div class="swatch-code">RUSTED IRON 02</div><div class="swatch-desc">Deep Oxide Tone</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/5. METALS/SUBMAIN/RUSTED_IRON_03.png', 'Rusted Iron 03', 'Mottled oxide surface detail · Organic industrial pattern.')">
+                        <div class="swatch-preview" style="background-image: url('catalog/5. METALS/SUBMAIN/RUSTED_IRON_03.png'); height: 220px;"></div>
+                        <div class="swatch-info"><div class="swatch-code">RUSTED IRON 03</div><div class="swatch-desc">Mottled Surface Detail</div></div>
+                    </div>
+
+                    <div class="swatch-item" onclick="openImageModal('catalog/5. METALS/SUBMAIN/STAINLESS_316_BRUSHED.jpg', 'Brushed Stainless Steel 316', 'Architectural marine-grade stainless steel 316 with directional brushed finish.')">
+                        <div class="swatch-preview" style="background-image: url('catalog/5. METALS/SUBMAIN/STAINLESS_316_BRUSHED.jpg'); height: 220px;"></div>
+                        <div class="swatch-info"><div class="swatch-code">STAINLESS 316 BRUSHED</div><div class="swatch-desc">Marine-Grade Brushed Stainless</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="event-banner">IWF Atlanta 2026 · Booth C613 · August 25–28</div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Universal Lightbox / Modal -->
+    <div id="universalModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-media" id="modalMediaContainer"></div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top & Cookie Banner -->
+    <a href="#top" id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top" style="opacity: 0; pointer-events: none;">&#8593;</a>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div>
+            <strong>We value your privacy.</strong> 
+            <p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact INTERA CABINET DOORS | B2B trade inquiries, sample requests, and custom millwork project quotations.">
+    <title>Contact & Trade Inquiries | INTERA CABINET DOORS</title>
+    <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 60px;
+            text-align: left;
+            margin-top: 40px;
+        }
+        .contact-info-card {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+        }
+        .info-block {
+            margin-bottom: 30px;
+        }
+        .info-block h4 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 0 8px 0;
+            color: var(--text-dark);
+        }
+        .info-block p {
+            font-size: 15px;
+            color: var(--text-gray);
+            margin: 0;
+            line-height: 1.6;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- LOCKED HEADER -->
+    <header>
+        <div class="header-brand">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;" aria-label="INTERA Home">
+                <img src="logo and favicon/logo.svg" alt="INTERA Logo" class="brand-logo-img">
+                <span class="logo">INTERA</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flat-page.html">Products</a></li>
+                <li><a href="catalog-page.html">Catalog</a></li>
+                <li><a href="application-page.html">Application</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="story-page.html">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="active btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 50vh MACRO HERO HEADER -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="hero-tag">B2B Trade Concierge</span>
+                <h1>LET'S BUILD YOUR NEXT PROJECT</h1>
+                <p class="lead">
+                    Whether specifying fronts for a luxury residential build, a commercial rollout, or thousands of IKEA SEKTION compatible doors, our engineering team is here to support your drawings and takeoffs.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT & SMART FORM SECTION -->
+        <section style="background: var(--bg-white); padding: 80px 0;">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Left: Direct Details & Trade Information -->
+                    <div>
+                        <div class="contact-info-card">
+                            <h3 style="font-size: 20px; font-weight: 700; text-transform: uppercase; margin: 0 0 25px 0; border-bottom: 2px solid var(--text-dark); padding-bottom: 10px;">
+                                Trade Headquarters
+                            </h3>
+
+                            <div class="info-block">
+                                <h4>Trade Exhibition</h4>
+                                <p style="font-weight: 600; color: var(--text-dark);">
+                                    IWF Atlanta 2026 · Booth C613<br>
+                                    August 25–28, 2026 · Georgia World Congress Center
+                                </p>
+                            </div>
+
+                            <div class="info-block">
+                                <h4>Email Specifications</h4>
+                                <p><a href="mailto:orders@interadoors.com" style="text-decoration: underline;">orders@interadoors.com</a></p>
+                                <p><a href="mailto:architects@interadoors.com" style="text-decoration: underline;">architects@interadoors.com</a></p>
+                            </div>
+
+                            <div class="info-block">
+                                <h4>Direct Phone</h4>
+                                <p>Toll-Free: +1 (800) 555-INTERA</p>
+                                <p>Direct CAM Support: +1 (800) 555-4683</p>
+                            </div>
+
+                            <div class="info-block" style="margin-bottom: 0;">
+                                <h4>Sample Delivery</h4>
+                                <p>Material sample boxes and 150+ finish binders ship nationwide within 48 hours for verified trade professionals.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: B2B Smart Form -->
+                    <div>
+                        <form class="smart-form" id="contactSmartForm" onsubmit="handleFormSubmit(event)">
+                            <h3 style="font-size: 20px; font-weight: 700; text-transform: uppercase; margin: 0 0 25px 0; border-bottom: 2px solid var(--text-dark); padding-bottom: 10px;">
+                                Project Specification Request
+                            </h3>
+
+                            <!-- Role Selector -->
+                            <div class="form-group">
+                                <label for="userRole">I am a... *</label>
+                                <select id="userRole" class="form-control" required>
+                                    <option value="" disabled selected>Select your professional role</option>
+                                    <option value="architect">Architect / Specifier</option>
+                                    <option value="contractor">General Contractor / Commercial Builder</option>
+                                    <option value="millworker">Cabinet Maker / Custom Millworker</option>
+                                    <option value="designer">Interior Designer</option>
+                                    <option value="developer">Real Estate Developer</option>
+                                    <option value="homeowner">Private Client / Residential Custom</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" class="form-control" placeholder="Jane Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="companyName">Company / Firm Name *</label>
+                                    <input type="text" id="companyName" class="form-control" placeholder="Studio Architecture LLC" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="emailAddress">Work Email *</label>
+                                    <input type="email" id="emailAddress" class="form-control" placeholder="jane@studio.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number</label>
+                                    <input type="tel" id="phoneNumber" class="form-control" placeholder="+1 (555) 000-0000">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="projectType">Project Profile</label>
+                                    <select id="projectType" class="form-control">
+                                        <option value="flat">Flat Slab Doors</option>
+                                        <option value="shaker-delgado">Shaker - Delgado 3/8" (10mm)</option>
+                                        <option value="shaker-marco">Shaker - Marco 3/4" (20mm)</option>
+                                        <option value="shaker-ancho">Shaker - Ancho 2" (50mm)</option>
+                                        <option value="handles">Integrated Handles (Suave / Fino)</option>
+                                        <option value="metals">Architectural Metals (Iron / Stainless)</option>
+                                        <option value="multi">Multiple Profiles / Mixed Scope</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="doorQuantity">Est. Door Count / Sq. Footage</label>
+                                    <input type="text" id="doorQuantity" class="form-control" placeholder="e.g. 85 doors / 450 sq ft">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectDetails">Project Details / Takeoff Notes</label>
+                                <textarea id="projectDetails" class="form-control" rows="4" placeholder="Include cabinetry dimensions, material finishes, or target delivery schedule..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary" style="width: 100%; padding: 16px; font-size: 14px;">
+                                Submit Specification &rarr;
+                            </button>
+
+                            <div id="formSuccessMessage" style="display: none; margin-top: 20px; padding: 15px; background: #e8f5e9; color: #2e7d32; border-radius: 4px; font-size: 14px; font-weight: 600; text-align: center;">
+                                Thank you! Your specification has been received. An INTERA technical CAM engineer will review your project and reply within one business day.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="event-banner">IWF Atlanta 2026 · Booth C613 · August 25–28</div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Universal Lightbox / Modal -->
+    <div id="universalModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-media" id="modalMediaContainer"></div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top & Cookie Banner -->
+    <a href="#top" id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top" style="opacity: 0; pointer-events: none;">&#8593;</a>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div>
+            <strong>We value your privacy.</strong> 
+            <p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('formSuccessMessage');
+            if (successMsg) {
+                successMsg.style.display = 'block';
+                e.target.reset();
+            }
+        }
+    </script>
+</body>
+</html>

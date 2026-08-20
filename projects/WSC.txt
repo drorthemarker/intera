@@ -1,0 +1,3 @@
+WSC SPORTS
+
+An AI platform that creates automated highlights for the NBA, NHL, ESPN and hundreds of leagues and broadcasters worldwide.

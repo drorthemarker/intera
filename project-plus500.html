@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plus500 Case Study | Global fintech corporate cabinetry and custom fronts by INTERA.">
+    <title>Plus500 Case Study | INTERA Projects</title>
+    <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-brand">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px;" aria-label="INTERA Home">
+                <img src="logo and favicon/logo.svg" alt="INTERA Logo" class="brand-logo-img">
+                <span class="logo">INTERA</span>
+            </a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flat-page.html">Products</a></li>
+                <li><a href="catalog-page.html">Catalog</a></li>
+                <li><a href="application-page.html">Application</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="story-page.html">Story</a></li>
+                <li><a href="about-page.html">About Us</a></li>
+                <li><a href="contact-page.html" class="btn-primary">Talk to us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('projects/plus500/main.jpg') center/cover no-repeat; color: #fff;">
+            <div class="container">
+                <span class="hero-tag" style="color: #fff; border-color: #fff;">Fintech Headquarters</span>
+                <h1 style="color: #fff;">PLUS500 TRADING FLOOR</h1>
+                <p class="lead" style="color: #eee; max-width: 780px;">
+                    Plus500 — A global online trading platform serving customers across dozens of countries, listed on the London Stock Exchange. Precision architectural fronts engineered for clean modern workspaces.
+                </p>
+                <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="projects.html" class="btn-outline" style="border-color: #fff; color: #fff;">&larr; Back to Portfolio</a>
+                    <a href="contact-page.html" class="btn-primary" style="background: #fff; color: #111 !important; border-color: #fff;">Discuss Commercial Millwork</a>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: var(--bg-white);">
+            <div class="container">
+                <h2 class="section-title">PLUS500 PHOTO GALLERY</h2>
+                <p class="section-subtitle">Click any image to enlarge in full-screen lightbox view.</p>
+                <div class="grid-3">
+                    <div class="card" onclick="openImageModal('projects/plus500/main.jpg', 'Plus500 · Main Cafeteria', 'Long span kitchen fronts in synchronous woodgrain decor.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container"><img src="projects/plus500/main.jpg" alt="Plus500 Main"></div>
+                        <h3>COMMUNAL PANTRY SUITE</h3><p>Synchronized Wood & Quartz Harmony</p>
+                    </div>
+                    <div class="card" onclick="openImageModal('projects/plus500/IMG_0028 (1).jpg', 'Plus500 · Angle View', 'Concealed push-to-open upper cabinets.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container"><img src="projects/plus500/IMG_0028 (1).jpg" alt="Plus500 Detail 1"></div>
+                        <h3>UPPER CABINET RUN</h3><p>Zero Joint ABS Edging</p>
+                    </div>
+                    <div class="card" onclick="openImageModal('projects/plus500/IMG_0044 (1).jpg', 'Plus500 · Island Detail', 'High traffic base cabinets with durable MR core.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container"><img src="projects/plus500/IMG_0044 (1).jpg" alt="Plus500 Detail 2"></div>
+                        <h3>ISLAND PREPARATION ZONE</h3><p>Impact Resistant Perimeter</p>
+                    </div>
+                    <div class="card" onclick="openImageModal('projects/plus500/IMG_0097 (1).jpg', 'Plus500 · Detail Shot', 'Precision door-to-door reveal consistency.')" style="cursor: pointer;">
+                        <div class="card-img-wrapper zoom-container"><img src="projects/plus500/IMG_0097 (1).jpg" alt="Plus500 Detail 3"></div>
+                        <h3>REVEAL CALIBRATION</h3><p>CNC Machined Tolerances</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="event-banner">IWF Atlanta 2026 · Booth C613 · August 25–28</div>
+        <div style="font-size: 22px; font-weight: 700; letter-spacing: 3px; margin-bottom: 10px;">INTERA</div>
+        <p style="font-size: 13px; color: #aaa;">Kitchen fronts and cabinet doors — made to measure, built to last.</p>
+        <div class="footer-links">
+            <a href="accessibility.html">Accessibility Statement</a><span>|</span>
+            <a href="privacy.html">Privacy Policy</a><span>|</span>
+            <a href="contact-page.html">Contact Us</a>
+        </div>
+        <p style="font-size: 12px; color: #666; margin-top: 30px;">&copy; 2026 INTERA CABINET DOORS. All Rights Reserved.</p>
+    </footer>
+
+    <div id="universalModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-media" id="modalMediaContainer"></div>
+            <div class="modal-info"><h3 id="modalTitle"></h3><p id="modalDesc"></p></div>
+        </div>
+    </div>
+
+    <a href="#top" id="scrollTopBtn" class="scroll-top" aria-label="Scroll back to top" style="opacity: 0; pointer-events: none;">&#8593;</a>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+        <div><strong>We value your privacy.</strong><p style="margin: 5px 0 0 0; color: #ccc;">We use cookies to enhance your browsing experience.</p></div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+            <button class="cookie-btn" onclick="acceptCookies()">Accept All</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
