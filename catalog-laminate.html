@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="INTERA Premium Laminate Catalog | Over 100 architectural decors across natural woods, solid colours, stones, concrete, and metals.">
-    <title>Premium Laminate Catalog | INTERA</title>
+    <meta name="description" content="Premium Laminate Collection | 102 architectural decors in woodgrains, stone, concrete, solid colors, and whites. Zero-joint edgebanding on moisture-resistant core.">
+    <title>Premium Laminate Collection (102 Decors) | INTERA Catalog</title>
     <link rel="icon" type="image/jpeg" href="logo and favicon/favicon.jpg">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .category-header {
+            text-align: left;
+            margin: 60px 0 20px 0;
+            border-bottom: 2px solid var(--text-dark);
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .category-header h3 {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        .category-header span {
+            font-size: 13px;
+            color: var(--text-gray);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
 <body id="top">
 
@@ -45,189 +70,480 @@
         <!-- 50vh MACRO HERO HEADER -->
         <section class="page-hero">
             <div class="container">
-                <span class="hero-tag">Material Category · 02</span>
+                <span class="hero-tag">Material Library · 102 Finishes</span>
                 <h1>PREMIUM LAMINATE COLLECTION</h1>
                 <p class="lead">
-                    Our widest palette — over a hundred decors. Natural woods, solid colours across whites, greys, greens, blues and terracottas, plus stone, concrete, and metal looks. Formulated for extreme scratch resistance and high-traffic performance.
+                    Our widest palette — 102 authentic decors spanning architectural woodgrains, deep matte solid colors, concrete, slate, and architectural whites. Built with zero-joint edgebanding on a moisture-resistant core.
                 </p>
                 <div style="margin-top: 25px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <a href="catalog-page.html" class="btn-outline">&larr; All Categories</a>
-                    <a href="contact-page.html" class="btn-primary">Order Swatch Binder</a>
+                    <a href="catalog-page.html" class="btn-outline">&larr; Back to Catalog Overview</a>
+                    <a href="contact-page.html" class="btn-primary">Request Sample Box</a>
                 </div>
             </div>
         </section>
 
-        <!-- SUB-NAVIGATION BAR (Catalogs) -->
-        <div style="background: #f4f4f4; border-bottom: 1px solid var(--border-light); padding: 15px 0;">
-            <div class="container" style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
-                <a href="catalog-melamine.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">1. Synchronized Wood</a>
-                <a href="catalog-laminate.html" style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dark); border-bottom: 2px solid var(--text-dark); padding-bottom: 4px;">2. Premium Laminate</a>
-                <a href="catalog-acrylic.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">3. Matte Acrylic</a>
-                <a href="catalog-veneer.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">4. Real Veneer</a>
-                <a href="catalog-metals.html" style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-gray);">5. Architectural Metals</a>
-            </div>
+        <!-- PROMISE BAR -->
+        <div class="promise-bar">
+            <span>102 Architectural Decors</span>
+            <span>Zero Dark Line Edge</span>
+            <span>Scratch & Stain Resistant</span>
         </div>
 
-        <!-- SWATCH GALLERY -->
-        <section style="background: var(--bg-white);">
+        <!-- 102 SWATCH LIBRARY GRID -->
+        <section style="background: var(--bg-white); padding-top: 60px;">
             <div class="container">
-                <h2 class="section-title">100+ LAMINATE DECORS</h2>
-                <p class="section-subtitle">Click any swatch to open the high-resolution quick-view modal.</p>
+                <p class="section-subtitle" style="margin-bottom: 20px;">Click any swatch to open a high-resolution full-screen preview with decor specifications.</p>
 
+                <!-- ==========================================
+                     1. WOODGRAINS (35 Decors - H Series)
+                     ========================================== -->
+                <div class="category-header">
+                    <h3>Architectural Woodgrains</h3>
+                    <span>35 Decors (H-Series)</span>
+                </div>
                 <div class="swatch-grid">
-                    <!-- Featured Submains -->
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/MAIN/H3311ST10.png', 'H3311ST10 Bleached Cuneo Oak', 'Pale open grain Scandinavian oak')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/MAIN/H3311ST10.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H3311ST10</div><div class="swatch-desc">Bleached Cuneo Oak</div></div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1143ST22.png', 'H1143 ST22', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1143ST22.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1143 ST22</div><div class="swatch-desc">Woodgrain Decor</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/SUBMAIN/F500ST20.png', 'F500ST20 Metallic Inox', 'Brushed metallic steel decor')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/SUBMAIN/F500ST20.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F500ST20</div><div class="swatch-desc">Metallic Inox</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/SUBMAIN/H3702ST10.png', 'H3702ST10 Tobacco Pacific Walnut', 'Dark rich repeating walnut grain')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/SUBMAIN/H3702ST10.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H3702ST10</div><div class="swatch-desc">Tobacco Pacific Walnut</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/SUBMAIN/U702ST9.png', 'U702ST9 Cashmere Grey', 'Soft warm architectural grey')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/SUBMAIN/U702ST9.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">U702ST9</div><div class="swatch-desc">Cashmere Grey Solid</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/SUBMAIN/W1100ST9.png', 'W1100ST9 Alpine White', 'Clean neutral matte white')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/SUBMAIN/W1100ST9.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">W1100ST9</div><div class="swatch-desc">Alpine White</div></div>
-                    </div>
-
-                    <!-- Additional Stones & Minerals -->
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F227ST78.png', 'F227ST78 Titan Ceramic', 'High performance ceramic concrete finish')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F227ST78.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F227ST78</div><div class="swatch-desc">Titan Ceramic</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F228ST78.png', 'F228ST78 Anthracite Ceramic', 'Deep charcoal ceramic texture')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F228ST78.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F228ST78</div><div class="swatch-desc">Anthracite Ceramic</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F229ST75.png', 'F229ST75 White Marble', 'Crisp architectural vein marble')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F229ST75.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F229ST75</div><div class="swatch-desc">White Marble Texture</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F234ST76.png', 'F234ST76 Scivaro Slate', 'Dark mineral slate structure')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F234ST76.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F234ST76</div><div class="swatch-desc">Scivaro Slate</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F302ST76.png', 'F302ST76 Ferro Bronze', 'Oxidized bronze metallic sheen')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F302ST76.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F302ST76</div><div class="swatch-desc">Ferro Bronze</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F416ST10.png', 'F416ST10 Beige Textile', 'Refined architectural fabric weave decor')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F416ST10.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F416ST10</div><div class="swatch-desc">Beige Textile Weave</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F417ST10.png', 'F417ST10 Grey Textile', 'Modern grey fabric weave surface')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F417ST10.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F417ST10</div><div class="swatch-desc">Grey Textile Weave</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F528ST20.png', 'F528ST20 Brushed Aluminium', 'Clean industrial metallic aluminium')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F528ST20.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F528ST20</div><div class="swatch-desc">Brushed Aluminium</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F637ST76.png', 'F637ST76 White Chromix', 'Plaster and polished concrete look')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F637ST76.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F637ST76</div><div class="swatch-desc">White Chromix Plaster</div></div>
-                    </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F638ST76.png', 'F638ST76 Silver Chromix', 'Silver mineral plaster decor')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F638ST76.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">F638ST76</div><div class="swatch-desc">Silver Chromix Plaster</div></div>
-                    </div>
-
-                    <!-- Woodgrains -->
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1145ST10.png', 'H1145ST10 Natural Bardolino Oak', 'Authentic open pore oak decor')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1145ST10.png', 'H1145 ST10', 'Architectural Woodgrain Finish')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1145ST10.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H1145ST10</div><div class="swatch-desc">Natural Bardolino Oak</div></div>
+                        <div class="swatch-info"><div class="swatch-code">H1145 ST10</div><div class="swatch-desc">Woodgrain Decor</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1181ST10.png', 'H1181ST10 Tobacco Halifax Oak', 'Dark rustic crack oak')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1180ST10.png', 'H1180 ST10', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1180ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1180 ST10</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1181ST10.png', 'H1181 ST10', 'Architectural Woodgrain Finish')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1181ST10.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H1181ST10</div><div class="swatch-desc">Tobacco Halifax Oak</div></div>
+                        <div class="swatch-info"><div class="swatch-code">H1181 ST10</div><div class="swatch-desc">Woodgrain Decor</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1204ST22.png', 'H1204ST22 White Tossini Elm', 'Fine Scandinavian elm grain')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1204ST22.png', 'H1204 ST22', 'Architectural Woodgrain Finish')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1204ST22.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H1204ST22</div><div class="swatch-desc">White Tossini Elm</div></div>
+                        <div class="swatch-info"><div class="swatch-code">H1204 ST22</div><div class="swatch-desc">Woodgrain Decor</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1379ST22.png', 'H1379ST22 Brown Orleans Oak', 'Refined architectural brown oak')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1227ST12.png', 'H1227 ST12', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1227ST12.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1227 ST12</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1227ST19.png', 'H1227 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1227ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1227 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1228ST12.png', 'H1228 ST12', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1228ST12.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1228 ST12</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1307ST19.png', 'H1307 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1307ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1307 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1362ST12.png', 'H1362 ST12', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1362ST12.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1362 ST12</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1367ST19.png', 'H1367 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1367ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1367 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1369ST19.png', 'H1369 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1369ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1369 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1379ST22.png', 'H1379 ST22', 'Architectural Woodgrain Finish')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1379ST22.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H1379ST22</div><div class="swatch-desc">Brown Orleans Oak</div></div>
+                        <div class="swatch-info"><div class="swatch-code">H1379 ST22</div><div class="swatch-desc">Woodgrain Decor</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H309ST12.png', 'H309ST12 Arlington Oak', 'Classic warm architectural oak')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1384ST19.png', 'H1384 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1384ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1384 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1385ST19.png', 'H1385 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1385ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1385 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H1386ST19.png', 'H1386 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H1386ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H1386 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H2409STG8.png', 'H2409 STG8', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H2409STG8.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H2409 STG8</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3041ST12.png', 'H3041 ST12', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3041ST12.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3041 ST12</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H305ST12.png', 'H305 ST12', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H305ST12.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H305 ST12</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H309ST12.png', 'H309 ST12', 'Architectural Woodgrain Finish')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H309ST12.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H309ST12</div><div class="swatch-desc">Arlington Oak</div></div>
+                        <div class="swatch-info"><div class="swatch-code">H309 ST12</div><div class="swatch-desc">Woodgrain Decor</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3156ST12.png', 'H3156ST12 Corbridge Oak', 'Subtle fine-pore natural oak')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3152ST19.png', 'H3152 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3152ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3152 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3154ST22.png', 'H3154 ST22', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3154ST22.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3154 ST22</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3156ST12.png', 'H3156 ST12', 'Architectural Woodgrain Finish')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3156ST12.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H3156ST12</div><div class="swatch-desc">Corbridge Oak</div></div>
+                        <div class="swatch-info"><div class="swatch-code">H3156 ST12</div><div class="swatch-desc">Woodgrain Decor</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3303ST10.png', 'H3303ST10 Natural Hamilton Oak', 'Striking contrasting oak cathedrals')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3157ST12.png', 'H3157 ST12', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3157ST12.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3157 ST12</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3180ST10.png', 'H3180 ST10', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3180ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3180 ST10</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3303ST10.png', 'H3303 ST10', 'Architectural Woodgrain Finish')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3303ST10.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H3303ST10</div><div class="swatch-desc">Natural Hamilton Oak</div></div>
+                        <div class="swatch-info"><div class="swatch-code">H3303 ST10</div><div class="swatch-desc">Woodgrain Decor</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3730ST10.png', 'H3730ST10 Natural Hickory', 'Warm, dynamic hickory grain pattern')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3311ST10.png', 'H3311 ST10', 'Bleached Cuneo Oak - Natural Planked')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3311ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3311 ST10</div><div class="swatch-desc">Bleached Cuneo Oak</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3325ST10.png', 'H3325 ST10', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3325ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3325 ST10</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3331ST10.png', 'H3331 ST10', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3331ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3331 ST10</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3342ST10.png', 'H3342 ST10', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3342ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3342 ST10</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3702ST10.png', 'H3702 ST10', 'Tobacco Pacific Walnut')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3702ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3702 ST10</div><div class="swatch-desc">Tobacco Pacific Walnut</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3710ST12.png', 'H3710 ST12', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3710ST12.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3710 ST12</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3730ST10.png', 'H3730 ST10', 'Architectural Woodgrain Finish')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3730ST10.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">H3730ST10</div><div class="swatch-desc">Natural Hickory</div></div>
+                        <div class="swatch-info"><div class="swatch-code">H3730 ST10</div><div class="swatch-desc">Woodgrain Decor</div></div>
                     </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3786ST19.png', 'H3786 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3786ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3786 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/H3787ST19.png', 'H3787 ST19', 'Architectural Woodgrain Finish')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/H3787ST19.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">H3787 ST19</div><div class="swatch-desc">Woodgrain Decor</div></div>
+                    </div>
+                </div>
 
-                    <!-- Solids (U-Series) -->
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U115ST9.png', 'U115ST9 Karat Beige', 'Warm architectural sand solid tone')">
+                <!-- ==========================================
+                     2. SOLID COLORS & NEUTRALS (40 Decors - U Series)
+                     ========================================== -->
+                <div class="category-header">
+                    <h3>Architectural Solid Colors & Neutrals</h3>
+                    <span>40 Decors (U-Series)</span>
+                </div>
+                <div class="swatch-grid">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U104ST9.png', 'U104 ST9', 'Alabaster White')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U104ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U104 ST9</div><div class="swatch-desc">Alabaster White</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U113ST9.png', 'U113 ST9', 'Cotton Beige')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U113ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U113 ST9</div><div class="swatch-desc">Cotton Beige</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U115ST9.png', 'U115 ST9', 'Cape Breton Grey')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U115ST9.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">U115ST9</div><div class="swatch-desc">Karat Beige Solid</div></div>
+                        <div class="swatch-info"><div class="swatch-code">U115 ST9</div><div class="swatch-desc">Cape Breton Grey</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U201ST9.png', 'U201ST9 Pebble Grey', 'Versatile modern mid-grey')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U125ST9.png', 'U125 ST9', 'Nordic Cream')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U125ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U125 ST9</div><div class="swatch-desc">Nordic Cream</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U156ST9.png', 'U156 ST9', 'Sand Beige')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U156ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U156 ST9</div><div class="swatch-desc">Sand Beige</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U201ST9.png', 'U201 ST9', 'Pebble Grey')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U201ST9.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">U201ST9</div><div class="swatch-desc">Pebble Grey Solid</div></div>
+                        <div class="swatch-info"><div class="swatch-code">U201 ST9</div><div class="swatch-desc">Pebble Grey</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U608ST9.png', 'U608ST9 Pistachio Green', 'Muted botanical architectural green')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U222ST9.png', 'U222 ST9', 'Crema')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U222ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U222 ST9</div><div class="swatch-desc">Crema</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U232ST9.png', 'U232 ST9', 'Nude')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U232ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U232 ST9</div><div class="swatch-desc">Nude</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U325ST9.png', 'U325 ST9', 'Antique Rose')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U325ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U325 ST9</div><div class="swatch-desc">Antique Rose</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U335ST9.png', 'U335 ST9', 'Mustard')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U335ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U335 ST9</div><div class="swatch-desc">Mustard</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U399ST9.png', 'U399 ST9', 'Garnet Red')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U399ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U399 ST9</div><div class="swatch-desc">Garnet Red</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U502ST9.png', 'U502 ST9', 'Premium Solid Tone')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U502ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U502 ST9</div><div class="swatch-desc">Solid Tone</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U540ST9.png', 'U540 ST9', 'Denim Blue')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U540ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U540 ST9</div><div class="swatch-desc">Denim Blue</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U545ST9.png', 'U545 ST9', 'Baltic Blue')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U545ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U545 ST9</div><div class="swatch-desc">Baltic Blue</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U565ST9.png', 'U565 ST9', 'Ocean Blue')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U565ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U565 ST9</div><div class="swatch-desc">Ocean Blue</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U575ST9.png', 'U575 ST9', 'Cosmic Blue')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U575ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U575 ST9</div><div class="swatch-desc">Cosmic Blue</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U604ST9.png', 'U604 ST9', 'Reed Green')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U604ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U604 ST9</div><div class="swatch-desc">Reed Green</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U608ST9.png', 'U608 ST9', 'Pistachio Green')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U608ST9.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">U608ST9</div><div class="swatch-desc">Pistachio Green Solid</div></div>
+                        <div class="swatch-info"><div class="swatch-code">U608 ST9</div><div class="swatch-desc">Pistachio Green</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U636ST9.png', 'U636ST9 Fjord Green', 'Deep Nordic fjord green solid')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U636ST9.png', 'U636 ST9', 'Fjord Green')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U636ST9.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">U636ST9</div><div class="swatch-desc">Fjord Green Solid</div></div>
+                        <div class="swatch-info"><div class="swatch-code">U636 ST9</div><div class="swatch-desc">Fjord Green</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U708ST76.png', 'U708ST76 Light Grey', 'Soft warm architectural light grey')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U638ST9.png', 'U638 ST9', 'Sage Green')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U638ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U638 ST9</div><div class="swatch-desc">Sage Green</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U640ST9.png', 'U640 ST9', 'Emerald Green')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U640ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U640 ST9</div><div class="swatch-desc">Emerald Green</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U645ST9.png', 'U645 ST9', 'Olive Green')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U645ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U645 ST9</div><div class="swatch-desc">Olive Green</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U665ST9.png', 'U665 ST9', 'Stone Green')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U665ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U665 ST9</div><div class="swatch-desc">Stone Green</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U702SM.png', 'U702 SM', 'Cashmere Grey Semi-Matte')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U702SM.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U702 SM</div><div class="swatch-desc">Cashmere Grey SM</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U702ST76.png', 'U702 ST76', 'Cashmere Grey Matex')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U702ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U702 ST76</div><div class="swatch-desc">Cashmere Grey ST76</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U702ST9.png', 'U702 ST9', 'Cashmere Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U702ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U702 ST9</div><div class="swatch-desc">Cashmere Grey ST9</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U707ST9.png', 'U707 ST9', 'Silk Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U707ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U707 ST9</div><div class="swatch-desc">Silk Grey</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U708ST76.png', 'U708 ST76', 'Light Grey Matex')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U708ST76.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">U708ST76</div><div class="swatch-desc">Light Grey Solid</div></div>
+                        <div class="swatch-info"><div class="swatch-code">U708 ST76</div><div class="swatch-desc">Light Grey ST76</div></div>
                     </div>
-
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U788ST9.png', 'U788ST9 Arctic Grey', 'Cool modern minimal slate grey')">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U727SM.png', 'U727 SM', 'Stone Grey Semi-Matte')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U727SM.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U727 SM</div><div class="swatch-desc">Stone Grey SM</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U727ST9.png', 'U727 ST9', 'Stone Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U727ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U727 ST9</div><div class="swatch-desc">Stone Grey ST9</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U732ST9.png', 'U732 ST9', 'Dust Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U732ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U732 ST9</div><div class="swatch-desc">Dust Grey</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U740ST9.png', 'U740 ST9', 'Dark Taupe')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U740ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U740 ST9</div><div class="swatch-desc">Dark Taupe</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U741ST9.png', 'U741 ST9', 'Lava Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U741ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U741 ST9</div><div class="swatch-desc">Lava Grey</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U750ST9.png', 'U750 ST9', 'Taupe Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U750ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U750 ST9</div><div class="swatch-desc">Taupe Grey</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U767ST9.png', 'U767 ST9', 'Cubanite Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U767ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U767 ST9</div><div class="swatch-desc">Cubanite Grey</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U775ST9.png', 'U775 ST9', 'White Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U775ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U775 ST9</div><div class="swatch-desc">White Grey</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U780ST9.png', 'U780 ST9', 'Monument Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U780ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U780 ST9</div><div class="swatch-desc">Monument Grey</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U788ST9.png', 'U788 ST9', 'Arctic Grey')">
                         <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U788ST9.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">U788ST9</div><div class="swatch-desc">Arctic Grey Solid</div></div>
+                        <div class="swatch-info"><div class="swatch-code">U788 ST9</div><div class="swatch-desc">Arctic Grey</div></div>
                     </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U830ST9.png', 'U830 ST9', 'Caramel')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U830ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U830 ST9</div><div class="swatch-desc">Caramel</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/U963ST7.png', 'U963 ST7', 'Diamond Grey')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/U963ST7.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">U963 ST7</div><div class="swatch-desc">Diamond Grey</div></div>
+                    </div>
+                </div>
 
-                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/W1200ST9.png', 'W1200ST9 Porcelain White', 'Rich off-white architectural tone')">
-                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/W1200ST9.png');"></div>
-                        <div class="swatch-info"><div class="swatch-code">W1200ST9</div><div class="swatch-desc">Porcelain White</div></div>
+                <!-- ==========================================
+                     3. MINERALS, STONES & METALS (20 Decors - F Series)
+                     ========================================== -->
+                <div class="category-header">
+                    <h3>Stones, Concretes & Architectural Metals</h3>
+                    <span>20 Decors (F-Series)</span>
+                </div>
+                <div class="swatch-grid">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F227ST78.png', 'F227 ST78', 'Titanium Slate')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F227ST78.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F227 ST78</div><div class="swatch-desc">Titanium Slate</div></div>
                     </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F228ST78.png', 'F228 ST78', 'Anthracite Slate')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F228ST78.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F228 ST78</div><div class="swatch-desc">Anthracite Slate</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F229ST75.png', 'F229 ST75', 'Silver Slate')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F229ST75.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F229 ST75</div><div class="swatch-desc">Silver Slate</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F234ST76.png', 'F234 ST76', 'Scivaro Slate')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F234ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F234 ST76</div><div class="swatch-desc">Scivaro Slate</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F235ST76.png', 'F235 ST76', 'Dark Scivaro Slate')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F235ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F235 ST76</div><div class="swatch-desc">Dark Scivaro Slate</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F237ST76.png', 'F237 ST76', 'Pewter Slate')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F237ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F237 ST76</div><div class="swatch-desc">Pewter Slate</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F302ST76.png', 'F302 ST76', 'Ferro Bronze')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F302ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F302 ST76</div><div class="swatch-desc">Ferro Bronze</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F311ST76.png', 'F311 ST76', 'Ceramic Anthracite')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F311ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F311 ST76</div><div class="swatch-desc">Ceramic Anthracite</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F323ST20.png', 'F323 ST20', 'Cobra Stone')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F323ST20.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F323 ST20</div><div class="swatch-desc">Cobra Stone</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F416ST10.png', 'F416 ST10', 'Beige Textile')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F416ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F416 ST10</div><div class="swatch-desc">Beige Textile</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F417ST10.png', 'F417 ST10', 'Grey Textile')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F417ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F417 ST10</div><div class="swatch-desc">Grey Textile</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F422ST10.png', 'F422 ST10', 'Silver Textile')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F422ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F422 ST10</div><div class="swatch-desc">Silver Textile</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F500ST20.png', 'F500 ST20', 'Metallic Inox')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F500ST20.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F500 ST20</div><div class="swatch-desc">Metallic Inox</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F527ST20.png', 'F527 ST20', 'Metallic Anthracite')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F527ST20.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F527 ST20</div><div class="swatch-desc">Metallic Anthracite</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F528ST20.png', 'F528 ST20', 'Metallic Bronze')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F528ST20.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F528 ST20</div><div class="swatch-desc">Metallic Bronze</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F579ST20.png', 'F579 ST20', 'Metallic Gold')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F579ST20.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F579 ST20</div><div class="swatch-desc">Metallic Gold</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F634ST76.png', 'F634 ST76', 'Light Canvas Concrete')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F634ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F634 ST76</div><div class="swatch-desc">Canvas Concrete</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F637ST76.png', 'F637 ST76', 'White Chromix Concrete')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F637ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F637 ST76</div><div class="swatch-desc">White Chromix</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F638ST76.png', 'F638 ST76', 'Silver Chromix Concrete')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F638ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F638 ST76</div><div class="swatch-desc">Silver Chromix</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/F685ST10.png', 'F685 ST10', 'Raw Industrial Plaster')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/F685ST10.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">F685 ST10</div><div class="swatch-desc">Industrial Plaster</div></div>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     4. ARCHITECTURAL WHITES & LIGHTS (7 Decors - W Series)
+                     ========================================== -->
+                <div class="category-header">
+                    <h3>Architectural Whites & Pure Neutrals</h3>
+                    <span>7 Decors (W-Series)</span>
+                </div>
+                <div class="swatch-grid">
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/W1000ST9.png', 'W1000 ST9', 'Premium White')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/W1000ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">W1000 ST9</div><div class="swatch-desc">Premium White</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/W1001ST9.png', 'W1001 ST9', 'Solid Polar White')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/W1001ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">W1001 ST9</div><div class="swatch-desc">Solid Polar White</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/W1100SM.png', 'W1100 SM', 'Alpine White Semi-Matte')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/W1100SM.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">W1100 SM</div><div class="swatch-desc">Alpine White SM</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/W1100ST76.png', 'W1100 ST76', 'Alpine White Matex')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/W1100ST76.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">W1100 ST76</div><div class="swatch-desc">Alpine White ST76</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/W1100ST9.png', 'W1100 ST9', 'Alpine White ST9')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/W1100ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">W1100 ST9</div><div class="swatch-desc">Alpine White ST9</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/W1200ST9.png', 'W1200 ST9', 'Porcelain White')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/W1200ST9.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">W1200 ST9</div><div class="swatch-desc">Porcelain White</div></div>
+                    </div>
+                    <div class="swatch-item" onclick="openImageModal('catalog/2. LAMINATE/W980SM.png', 'W980 SM', 'Platinum White Semi-Matte')">
+                        <div class="swatch-preview" style="background-image: url('catalog/2. LAMINATE/W980SM.png');"></div>
+                        <div class="swatch-info"><div class="swatch-code">W980 SM</div><div class="swatch-desc">Platinum White SM</div></div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 80px; text-align: center;">
+                    <a href="contact-page.html" class="btn-primary">Inquire About Custom Decors</a>
                 </div>
             </div>
         </section>
