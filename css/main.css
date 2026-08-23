@@ -1255,14 +1255,18 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        padding: 0 25px;
+        padding: 0 20px;
         height: 70px;
     }
     .container {
-        padding: 0 25px;
+        padding: 0 20px;
     }
     .hamburger {
         display: flex;
+        margin-left: auto;
+    }
+    header nav {
+        display: contents;
     }
     nav ul.nav-menu {
         position: fixed;
