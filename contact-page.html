@@ -128,7 +128,10 @@
 
                     <!-- Right: B2B Smart Form -->
                     <div>
-                        <form class="smart-form" id="contactSmartForm" onsubmit="handleFormSubmit(event)">
+                        <form class="smart-form" id="contactSmartForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleFormSubmit(event)">
+                            <input type="hidden" name="access_key" value="ba4d51e2-9ebb-4e8a-8ace-9905f85d37dd">
+                            <input type="hidden" name="subject" value="New B2B Project Inquiry - INTERA">
+                            
                             <h3 style="font-size: 20px; font-weight: 700; text-transform: uppercase; margin: 0 0 25px 0; border-bottom: 2px solid var(--text-dark); padding-bottom: 10px;">
                                 Project Specification Request
                             </h3>
@@ -136,7 +139,7 @@
                             <!-- Role Selector -->
                             <div class="form-group">
                                 <label for="userRole">I am a... *</label>
-                                <select id="userRole" class="form-control" required>
+                                <select id="userRole" name="Role" class="form-control" required>
                                     <option value="" disabled selected>Select your professional role</option>
                                     <option value="architect">Architect / Specifier</option>
                                     <option value="contractor">General Contractor / Commercial Builder</option>
@@ -150,29 +153,29 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="fullName">Full Name *</label>
-                                    <input type="text" id="fullName" class="form-control" placeholder="Jane Doe" required>
+                                    <input type="text" id="fullName" name="Name" class="form-control" placeholder="Jane Doe" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="companyName">Company / Firm Name *</label>
-                                    <input type="text" id="companyName" class="form-control" placeholder="Studio Architecture LLC" required>
+                                    <input type="text" id="companyName" name="Company" class="form-control" placeholder="Studio Architecture LLC" required>
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="emailAddress">Work Email *</label>
-                                    <input type="email" id="emailAddress" class="form-control" placeholder="jane@studio.com" required>
+                                    <input type="email" id="emailAddress" name="Email" class="form-control" placeholder="jane@studio.com" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="phoneNumber">Phone Number</label>
-                                    <input type="tel" id="phoneNumber" class="form-control" placeholder="+1 (555) 000-0000">
+                                    <input type="tel" id="phoneNumber" name="Phone" class="form-control" placeholder="+1 (555) 000-0000">
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="projectType">Project Profile</label>
-                                    <select id="projectType" class="form-control">
+                                    <select id="projectType" name="Project_Type" class="form-control">
                                         <option value="flat">Flat Slab Doors</option>
                                         <option value="shaker-delgado">Shaker - Delgado 3/8" (10mm)</option>
                                         <option value="shaker-marco">Shaker - Marco 3/4" (20mm)</option>
@@ -184,13 +187,13 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="doorQuantity">Est. Door Count / Sq. Footage</label>
-                                    <input type="text" id="doorQuantity" class="form-control" placeholder="e.g. 85 doors / 450 sq ft">
+                                    <input type="text" id="doorQuantity" name="Quantity" class="form-control" placeholder="e.g. 85 doors / 450 sq ft">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="projectDetails">Project Details / Takeoff Notes</label>
-                                <textarea id="projectDetails" class="form-control" rows="4" placeholder="Include cabinetry dimensions, material finishes, or target delivery schedule..."></textarea>
+                                <textarea id="projectDetails" name="Details" class="form-control" rows="4" placeholder="Include cabinetry dimensions, material finishes, or target delivery schedule..."></textarea>
                             </div>
 
                             <button type="submit" class="btn-primary" style="width: 100%; padding: 16px; font-size: 14px;">
@@ -251,11 +254,36 @@
     <script>
         function handleFormSubmit(e) {
             e.preventDefault();
+            const form = e.target;
             const successMsg = document.getElementById('formSuccessMessage');
-            if (successMsg) {
-                successMsg.style.display = 'block';
-                e.target.reset();
-            }
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = 'Sending...';
+            submitBtn.disabled = true;
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => {
+                if (response.status === 200) {
+                    if (successMsg) {
+                        successMsg.style.display = 'block';
+                    }
+                    form.reset();
+                } else {
+                    alert('There was a problem submitting your form. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error submitting form:', error);
+                alert('An error occurred submitting the form. Please try again later.');
+            })
+            .finally(() => {
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            });
         }
     </script>
 </body>
