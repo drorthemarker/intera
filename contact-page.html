@@ -176,6 +176,7 @@
                                 <div class="form-group">
                                     <label for="projectType">Project Profile</label>
                                     <select id="projectType" name="Project_Type" class="form-control">
+                                        <option value="application-access">Request Application Access</option>
                                         <option value="flat">Flat Slab Doors</option>
                                         <option value="shaker-delgado">Shaker - Delgado 3/8" (10mm)</option>
                                         <option value="shaker-marco">Shaker - Marco 3/4" (20mm)</option>
@@ -285,6 +286,14 @@
                 submitBtn.disabled = false;
             });
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const type = urlParams.get('type');
+            if (type && document.getElementById('projectType')) {
+                document.getElementById('projectType').value = type;
+            }
+        });
     </script>
 </body>
 </html>
